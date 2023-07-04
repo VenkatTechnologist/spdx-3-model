@@ -488,9 +488,9 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
           
               <li class="second-level" style="line-height: 20px;" id="sd_79"><a  href="class-softwarepackage.html">software:Package</a></li>
           
-              <li class="second-level" style="line-height: 20px;" id="sd_80"><a  href="class-softwaresbomtype.html">software:SBOMType</a></li>
+              <li class="second-level" style="line-height: 20px;" id="sd_80"><a  href="class-softwaresbom.html">software:Sbom</a></li>
           
-              <li class="second-level" style="line-height: 20px;" id="sd_81"><a  href="class-softwaresbom.html">software:Sbom</a></li>
+              <li class="second-level" style="line-height: 20px;" id="sd_81"><a  href="class-softwaresbomtype.html">software:SbomType</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_82"><a  href="class-softwaresnippet.html">software:Snippet</a></li>
           
@@ -1073,35 +1073,35 @@ at https://spdx.org/licenses.">licensing:ListedLicense</a></li>
 <span class="s">(ListedLicense) or defined by an SPDX data creator (CustomLicense).&quot;&quot;&quot; ;</span>
 <span class="s">    rdfs:subClassOf licensing:ExtendableLicense ;</span>
 <span class="s">    ns0:term_status &quot;Stable&quot; ;</span>
-<span class="s">    sh:property [ sh:datatype xsd:boolean ;</span>
+<span class="s">    sh:property [ sh:datatype xsd:string ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;isDeprecatedLicenseId&quot; ;</span>
-<span class="s">            sh:path licensing:isDeprecatedLicenseId ],</span>
-<span class="s">        [ sh:datatype xsd:boolean ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;isFsfLibre&quot; ;</span>
-<span class="s">            sh:path licensing:isFsfLibre ],</span>
+<span class="s">            sh:name &quot;obsoletedBy&quot; ;</span>
+<span class="s">            sh:path licensing:obsoletedBy ],</span>
 <span class="s">        [ sh:datatype xsd:string ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;standardLicenseTemplate&quot; ;</span>
 <span class="s">            sh:path licensing:standardLicenseTemplate ],</span>
-<span class="s">        [ sh:datatype xsd:string ;</span>
+<span class="s">        [ sh:datatype xsd:boolean ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;obsoletedBy&quot; ;</span>
-<span class="s">            sh:path licensing:obsoletedBy ],</span>
+<span class="s">            sh:name &quot;isDeprecatedLicenseId&quot; ;</span>
+<span class="s">            sh:path licensing:isDeprecatedLicenseId ],</span>
 <span class="s">        [ sh:datatype xsd:string ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;standardLicenseHeader&quot; ;</span>
 <span class="s">            sh:path licensing:standardLicenseHeader ],</span>
 <span class="s">        [ sh:datatype xsd:boolean ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;isOsiApproved&quot; ;</span>
-<span class="s">            sh:path licensing:isOsiApproved ],</span>
+<span class="s">            sh:name &quot;isFsfLibre&quot; ;</span>
+<span class="s">            sh:path licensing:isFsfLibre ],</span>
 <span class="s">        [ sh:datatype xsd:string ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:minCount 1 ;</span>
 <span class="s">            sh:name &quot;licenseText&quot; ;</span>
-<span class="s">            sh:path licensing:licenseText ] .</span>
+<span class="s">            sh:path licensing:licenseText ],</span>
+<span class="s">        [ sh:datatype xsd:boolean ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:name &quot;isOsiApproved&quot; ;</span>
+<span class="s">            sh:path licensing:isOsiApproved ] .</span>
 </pre></div>
 
             
@@ -1131,7 +1131,7 @@ at https://spdx.org/licenses.">licensing:ListedLicense</a></li>
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Thu, 29 Jun 2023 07:44:48 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Tue, 04 Jul 2023 21:13:52 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>
@@ -1192,7 +1192,7 @@ $('#search-input-sidebar').keyup(function() {
 
     $(document).ready(function (){
       $('#sidebar-wrapper').animate({
-          scrollTop: $("#sd_350").offset().top - 100
+          scrollTop: $("#sd_342").offset().top - 100
       }, 100);
     });
 
