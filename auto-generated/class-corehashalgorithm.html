@@ -1341,11 +1341,13 @@ where multiple, equivalent official translations exist.</span>
               <div class="highlight"><pre><span></span><span class="k">@prefix</span><span class="w"> </span><span class="nn">core:</span><span class="w"> </span><span class="nv">&lt;https://spdx.org/rdf/v3/Core/&gt;</span><span class="w"> </span><span class="p">.</span>
 <span class="k">@prefix</span><span class="w"> </span><span class="nn">ns0:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2003/06/sw-vocab-status/ns#&gt;</span><span class="w"> </span><span class="p">.</span>
 <span class="k">@prefix</span><span class="w"> </span><span class="nn">owl:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2002/07/owl#&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">rdf:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span><span class="w"> </span><span class="p">.</span>
 <span class="k">@prefix</span><span class="w"> </span><span class="nn">rdfs:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span><span class="w"> </span><span class="p">.</span>
 
 <span class="nn">core</span><span class="p">:</span><span class="nt">HashAlgorithm</span> <span class="kt">a</span> <span class="nn">owl</span><span class="p">:</span><span class="nt">Class</span> <span class="p">;</span>
     <span class="nn">rdfs</span><span class="p">:</span><span class="nt">comment</span> <span class="s">&quot;&quot;&quot;A HashAlgorithm is a mathematical algorithm that maps data of arbitrary size to a bit string (the hash)</span>
 <span class="s">and is a one-way function, that is, a function which is practically infeasible to invert.&quot;&quot;&quot; ;</span>
+<span class="s">    owl:oneOf ( &lt;https://spdx.org/rdf/v3/Core/HashAlgorithm/sha384&gt; &lt;https://spdx.org/rdf/v3/Core/HashAlgorithm/blake2b256&gt; &lt;https://spdx.org/rdf/v3/Core/HashAlgorithm/md2&gt; &lt;https://spdx.org/rdf/v3/Core/HashAlgorithm/sphincsPlus&gt; &lt;https://spdx.org/rdf/v3/Core/HashAlgorithm/sha1&gt; &lt;https://spdx.org/rdf/v3/Core/HashAlgorithm/sha3_384&gt; &lt;https://spdx.org/rdf/v3/Core/HashAlgorithm/crystalsDilithium&gt; &lt;https://spdx.org/rdf/v3/Core/HashAlgorithm/md6&gt; &lt;https://spdx.org/rdf/v3/Core/HashAlgorithm/sha224&gt; &lt;https://spdx.org/rdf/v3/Core/HashAlgorithm/spdxPvcSha1&gt; &lt;https://spdx.org/rdf/v3/Core/HashAlgorithm/spdxPvcSha256&gt; &lt;https://spdx.org/rdf/v3/Core/HashAlgorithm/sha256&gt; &lt;https://spdx.org/rdf/v3/Core/HashAlgorithm/crystalsKyber&gt; &lt;https://spdx.org/rdf/v3/Core/HashAlgorithm/sha3_256&gt; &lt;https://spdx.org/rdf/v3/Core/HashAlgorithm/md5&gt; &lt;https://spdx.org/rdf/v3/Core/HashAlgorithm/sha512&gt; &lt;https://spdx.org/rdf/v3/Core/HashAlgorithm/blake3&gt; &lt;https://spdx.org/rdf/v3/Core/HashAlgorithm/falcon&gt; &lt;https://spdx.org/rdf/v3/Core/HashAlgorithm/blake2b384&gt; &lt;https://spdx.org/rdf/v3/Core/HashAlgorithm/sha3_512&gt; &lt;https://spdx.org/rdf/v3/Core/HashAlgorithm/other&gt; &lt;https://spdx.org/rdf/v3/Core/HashAlgorithm/md4&gt; &lt;https://spdx.org/rdf/v3/Core/HashAlgorithm/blake2b512&gt; &lt;https://spdx.org/rdf/v3/Core/HashAlgorithm/sha3_224&gt; ) ;</span>
 <span class="s">    ns0:term_status &quot;Stable&quot; .</span>
 </pre></div>
 
@@ -1376,7 +1378,7 @@ where multiple, equivalent official translations exist.</span>
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Sun, 09 Jul 2023 18:25:53 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Thu, 13 Jul 2023 15:19:50 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>

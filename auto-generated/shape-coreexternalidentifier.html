@@ -1042,14 +1042,11 @@ that uniquely identifies an Element.</p>
     <span class="nn">rdfs</span><span class="p">:</span><span class="nt">comment</span> <span class="s">&quot;&quot;&quot;An ExternalIdentifier is a reference to a resource outside the scope of SPDX-3.0 content</span>
 <span class="s">that uniquely identifies an Element.&quot;&quot;&quot; ;</span>
 <span class="s">    ns0:term_status &quot;Stable&quot; ;</span>
-<span class="s">    sh:property [ sh:datatype xsd:anyURI ;</span>
-<span class="s">            sh:name &quot;identifierLocator&quot; ;</span>
-<span class="s">            sh:path core:identifierLocator ],</span>
-<span class="s">        [ sh:datatype xsd:string ;</span>
+<span class="s">    sh:property [ sh:class core:ExternalIdentifierType ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:minCount 1 ;</span>
-<span class="s">            sh:name &quot;identifier&quot; ;</span>
-<span class="s">            sh:path core:identifier ],</span>
+<span class="s">            sh:name &quot;externalIdentifierType&quot; ;</span>
+<span class="s">            sh:path core:externalIdentifierType ],</span>
 <span class="s">        [ sh:datatype xsd:anyURI ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;issuingAuthority&quot; ;</span>
@@ -1058,11 +1055,14 @@ that uniquely identifies an Element.</p>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;comment&quot; ;</span>
 <span class="s">            sh:path core:comment ],</span>
-<span class="s">        [ sh:class core:ExternalIdentifierType ;</span>
+<span class="s">        [ sh:datatype xsd:anyURI ;</span>
+<span class="s">            sh:name &quot;identifierLocator&quot; ;</span>
+<span class="s">            sh:path core:identifierLocator ],</span>
+<span class="s">        [ sh:datatype xsd:string ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:minCount 1 ;</span>
-<span class="s">            sh:name &quot;externalIdentifierType&quot; ;</span>
-<span class="s">            sh:path core:externalIdentifierType ] .</span>
+<span class="s">            sh:name &quot;identifier&quot; ;</span>
+<span class="s">            sh:path core:identifier ] .</span>
 </pre></div>
 
             
@@ -1092,7 +1092,7 @@ that uniquely identifies an Element.</p>
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Sun, 09 Jul 2023 18:25:54 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Thu, 13 Jul 2023 15:19:51 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>
@@ -1153,7 +1153,7 @@ $('#search-input-sidebar').keyup(function() {
 
     $(document).ready(function (){
       $('#sidebar-wrapper').animate({
-          scrollTop: $("#sd_343").offset().top - 100
+          scrollTop: $("#sd_345").offset().top - 100
       }, 100);
     });
 
