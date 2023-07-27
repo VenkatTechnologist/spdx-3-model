@@ -1074,10 +1074,6 @@ such as a package, a file, or a snippet.</p>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;attributionText&quot; ;</span>
 <span class="s">            sh:path software:attributionText ],</span>
-<span class="s">        [ sh:datatype xsd:string ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;copyrightText&quot; ;</span>
-<span class="s">            sh:path software:copyrightText ],</span>
 <span class="s">        [ sh:class licensing:AnyLicenseInfo ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;concludedLicense&quot; ;</span>
@@ -1089,6 +1085,10 @@ such as a package, a file, or a snippet.</p>
 <span class="s">        [ sh:class software:SoftwarePurpose ;</span>
 <span class="s">            sh:name &quot;additionalPurpose&quot; ;</span>
 <span class="s">            sh:path software:additionalPurpose ],</span>
+<span class="s">        [ sh:datatype xsd:string ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:name &quot;copyrightText&quot; ;</span>
+<span class="s">            sh:path software:copyrightText ],</span>
 <span class="s">        [ sh:class licensing:AnyLicenseInfo ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;declaredLicense&quot; ;</span>
@@ -1126,7 +1126,7 @@ such as a package, a file, or a snippet.</p>
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Wed, 19 Jul 2023 16:00:24 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Thu, 27 Jul 2023 14:29:34 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>
@@ -1187,7 +1187,7 @@ $('#search-input-sidebar').keyup(function() {
 
     $(document).ready(function (){
       $('#sidebar-wrapper').animate({
-          scrollTop: $("#sd_318").offset().top - 100
+          scrollTop: $("#sd_330").offset().top - 100
       }, 100);
     });
 
