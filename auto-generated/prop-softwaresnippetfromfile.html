@@ -589,7 +589,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
           
               <li class="second-level" style="line-height: 20px;" id="sd_200"><a   href="prop-coreexternalreference.html">core:externalReference</a></li>
           
-              <li class="second-level" style="line-height: 20px;" id="sd_201"><a class="active"  href="prop-coreexternalreferencetype.html">core:externalReferenceType</a></li>
+              <li class="second-level" style="line-height: 20px;" id="sd_201"><a   href="prop-coreexternalreferencetype.html">core:externalReferenceType</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_202"><a   href="prop-corefrom.html">core:from</a></li>
           
@@ -787,7 +787,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
           
               <li class="second-level" style="line-height: 20px;" id="sd_227"><a   href="prop-softwaresbomtype.html">software:sbomType</a></li>
           
-              <li class="second-level" style="line-height: 20px;" id="sd_228"><a   href="prop-softwaresnippetfromfile.html">software:snippetFromFile</a></li>
+              <li class="second-level" style="line-height: 20px;" id="sd_228"><a class="active"  href="prop-softwaresnippetfromfile.html">software:snippetFromFile</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_229"><a   href="prop-softwaresoftwarelinkage.html">software:softwareLinkage</a></li>
           
@@ -896,7 +896,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
           <a href="entities-tree-properties.html">Properties</a>
     </li>
       <li class="active">
-            core:externalReferenceType
+            software:snippetFromFile
         </li>
   </ol>
 
@@ -920,7 +920,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 
             <h1>
 
-                core:externalReferenceType
+                software:snippetFromFile
                 
                     <small class="label label-info label-xs ">leaf node</small>
                   
@@ -939,7 +939,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <li><a href="entities-tree-properties.html">rdf:Property</a>
 
                           <ul>
-                            <li><a style="font-weight: bold;" title="'externalReferenceType' - An externalReferenceType specifies the type of the external reference.">core:externalReferenceType</a>
+                            <li><a style="font-weight: bold;" title="'snippetFromFile' - The field identifies the file which contains the snippet.">software:snippetFromFile</a>
 
                             
                               </li>
@@ -963,7 +963,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
              </div>
              <div class="panel-body">
 
-                 <code>https://spdx.org/rdf/v3/Core/externalReferenceType</code>
+                 <code>https://spdx.org/rdf/v3/Software/snippetFromFile</code>
              </div>
            </div>
             </div></div>
@@ -978,7 +978,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
              </div>
              <div class="panel-body">
 
-                 externalReferenceType
+                 snippetFromFile
              </div>
            </div>
             </div></div>
@@ -993,7 +993,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
             </div>
             <div class="panel-body">
 
-                <p>An externalReferenceType specifies the type of the external reference.</p>
+                <p>The field identifies the file which contains the snippet.</p>
             </div>
           </div>
            </div></div>
@@ -1024,7 +1024,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                      
                          
                          
-                              <a href="class-coreexternalreference.html" title="https://spdx.org/rdf/v3/Core/ExternalReference">core:ExternalReference</a>
+                              <a href="class-softwaresnippet.html" title="https://spdx.org/rdf/v3/Software/Snippet">software:Snippet</a>
                            
                            
                          
@@ -1032,14 +1032,14 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                    </td>
 
                     <td>
-                      core:externalReferenceType
+                      software:snippetFromFile
                     </td>
 
                     <td>
                       
                           
                           
-                               <a href="class-coreexternalreferencetype.html" title="https://spdx.org/rdf/v3/Core/ExternalReferenceType">core:ExternalReferenceType</a>
+                               <a href="class-softwarefile.html" title="https://spdx.org/rdf/v3/Software/File">software:File</a>
                             
                             
                           
@@ -1061,15 +1061,15 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 
                 
 
-                    <div class="highlight"><pre><span></span><span class="k">@prefix</span><span class="w"> </span><span class="nn">core:</span><span class="w"> </span><span class="nv">&lt;https://spdx.org/rdf/v3/Core/&gt;</span><span class="w"> </span><span class="p">.</span>
-<span class="k">@prefix</span><span class="w"> </span><span class="nn">ns0:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2003/06/sw-vocab-status/ns#&gt;</span><span class="w"> </span><span class="p">.</span>
+                    <div class="highlight"><pre><span></span><span class="k">@prefix</span><span class="w"> </span><span class="nn">ns0:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2003/06/sw-vocab-status/ns#&gt;</span><span class="w"> </span><span class="p">.</span>
 <span class="k">@prefix</span><span class="w"> </span><span class="nn">owl:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2002/07/owl#&gt;</span><span class="w"> </span><span class="p">.</span>
 <span class="k">@prefix</span><span class="w"> </span><span class="nn">rdfs:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">software:</span><span class="w"> </span><span class="nv">&lt;https://spdx.org/rdf/v3/Software/&gt;</span><span class="w"> </span><span class="p">.</span>
 
-<span class="nn">core</span><span class="p">:</span><span class="nt">externalReferenceType</span> <span class="kt">a</span> <span class="nn">owl</span><span class="p">:</span><span class="nt">ObjectProperty</span> <span class="p">;</span>
-    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">comment</span> <span class="s">&quot;An externalReferenceType specifies the type of the external reference.&quot;</span> <span class="p">;</span>
-    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">domain</span> <span class="nn">core</span><span class="p">:</span><span class="nt">ExternalReference</span> <span class="p">;</span>
-    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">range</span> <span class="nn">core</span><span class="p">:</span><span class="nt">ExternalReferenceType</span> <span class="p">;</span>
+<span class="nn">software</span><span class="p">:</span><span class="nt">snippetFromFile</span> <span class="kt">a</span> <span class="nn">owl</span><span class="p">:</span><span class="nt">ObjectProperty</span> <span class="p">;</span>
+    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">comment</span> <span class="s">&quot;The field identifies the file which contains the snippet.&quot;</span> <span class="p">;</span>
+    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">domain</span> <span class="nn">software</span><span class="p">:</span><span class="nt">Snippet</span> <span class="p">;</span>
+    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">range</span> <span class="nn">software</span><span class="p">:</span><span class="nt">File</span> <span class="p">;</span>
     <span class="nn">ns0</span><span class="p">:</span><span class="nt">term_status</span> <span class="s">&quot;Stable&quot;</span> <span class="p">.</span>
 </pre></div>
 
@@ -1170,7 +1170,7 @@ $('#search-input-sidebar').keyup(function() {
 
     $(document).ready(function (){
       $('#sidebar-wrapper').animate({
-          scrollTop: $("#sd_201").offset().top - 100
+          scrollTop: $("#sd_228").offset().top - 100
       }, 100);
     });
 
