@@ -695,7 +695,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
           
               <li class="second-level" style="line-height: 20px;" id="sd_146"><a   href="prop-expandedlicensinglicensename.html">expandedlicensing:licenseName</a></li>
           
-              <li class="second-level" style="line-height: 20px;" id="sd_147"><a   href="prop-expandedlicensinglicensexml.html">expandedlicensing:licenseXml</a></li>
+              <li class="second-level" style="line-height: 20px;" id="sd_147"><a class="active"  href="prop-expandedlicensinglicensexml.html">expandedlicensing:licenseXml</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_148"><a   href="prop-expandedlicensinglistversionadded.html">expandedlicensing:listVersionAdded</a></li>
           
@@ -755,7 +755,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
           
               <li class="second-level" style="line-height: 20px;" id="sd_168"><a   href="prop-securitywithdrawntime.html">security:withdrawnTime</a></li>
           
-              <li class="second-level" style="line-height: 20px;" id="sd_169"><a class="active"  href="prop-simplelicensinglicenseexpression.html">simplelicensing:licenseExpression</a></li>
+              <li class="second-level" style="line-height: 20px;" id="sd_169"><a   href="prop-simplelicensinglicenseexpression.html">simplelicensing:licenseExpression</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_170"><a   href="prop-simplelicensinglicensetext.html">simplelicensing:licenseText</a></li>
           
@@ -896,7 +896,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
           <a href="entities-tree-properties.html">Properties</a>
     </li>
       <li class="active">
-            simplelicensing:licenseExpression
+            expandedlicensing:licenseXml
         </li>
   </ol>
 
@@ -920,7 +920,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 
             <h1>
 
-                simplelicensing:licenseExpression
+                expandedlicensing:licenseXml
                 
                     <small class="label label-info label-xs ">leaf node</small>
                   
@@ -939,7 +939,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <li><a href="entities-tree-properties.html">rdf:Property</a>
 
                           <ul>
-                            <li><a style="font-weight: bold;" title="'licenseExpression' - Often a single license can be used to represent the licensing terms of a source code or binary file, but..">simplelicensing:licenseExpression</a>
+                            <li><a style="font-weight: bold;" title="'licenseXml' - The license XML format is defined and used by the SPDX legal team. See the XML fields defined at https://github.com/spdx/license-list-XML/blob/main/DOCS/xml-fields.md..">expandedlicensing:licenseXml</a>
 
                             
                               </li>
@@ -963,7 +963,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
              </div>
              <div class="panel-body">
 
-                 <code>https://spdx.org/rdf/v3/SimpleLicensing/licenseExpression</code>
+                 <code>https://spdx.org/rdf/v3/ExpandedLicensing/licenseXml</code>
              </div>
            </div>
             </div></div>
@@ -978,7 +978,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
              </div>
              <div class="panel-body">
 
-                 licenseExpression
+                 licenseXml
              </div>
            </div>
             </div></div>
@@ -993,9 +993,9 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
             </div>
             <div class="panel-body">
 
-                <p>Often a single license can be used to represent the licensing terms of a source code or binary file, but there are situations where a single license identifier is not sufficient. A common example is when software is offered under a choice of one or more licenses (e.g., GPL-2.0-only OR BSD-3-Clause). Another example is when a set of licenses is needed to represent a binary program constructed by compiling and linking two (or more) different source files each governed by different licenses (e.g., LGPL-2.1-only AND BSD-3-Clause).</p>
-
-<p>SPDX License Expressions provide a way for one to construct expressions that more accurately represent the licensing terms typically found in open source software source code. A license expression could be a single license identifier found on the SPDX License List; a user defined license reference denoted by the LicenseRef-idString; a license identifier combined with an SPDX exception; or some combination of license identifiers, license references and exceptions constructed using a small set of defined operators (e.g., AND, OR, WITH and +). We provide the definition of what constitutes a valid an SPDX License Expression in this section.</p>
+                <p>The license XML format is defined and used by the SPDX legal team.<br>
+See the XML fields defined at https://github.com/spdx/license-list-XML/blob/main/DOCS/xml-fields.md for a text description.<br>
+There is also an XML schema available at https://github.com/spdx/license-list-XML/blob/main/schema/ListedLicense.xsd.</p>
             </div>
           </div>
            </div></div>
@@ -1026,7 +1026,12 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                      
                          
                          
-                              <a href="class-simplelicensinglicenseexpression.html" title="https://spdx.org/rdf/v3/SimpleLicensing/LicenseExpression">simplelicensing:LicenseExpression</a>
+                              <a href="class-expandedlicensinglicenseaddition.html" title="https://spdx.org/rdf/v3/ExpandedLicensing/LicenseAddition">expandedlicensing:LicenseAddition</a>
+                           
+                           , 
+                         
+                         
+                              <a href="class-expandedlicensinglicense.html" title="https://spdx.org/rdf/v3/ExpandedLicensing/License">expandedlicensing:License</a>
                            
                            
                          
@@ -1034,7 +1039,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                    </td>
 
                     <td>
-                      simplelicensing:licenseExpression
+                      expandedlicensing:licenseXml
                     </td>
 
                     <td>
@@ -1063,19 +1068,22 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 
                 
 
-                    <div class="highlight"><pre><span></span><span class="k">@prefix</span><span class="w"> </span><span class="nn">ns0:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2003/06/sw-vocab-status/ns#&gt;</span><span class="w"> </span><span class="p">.</span>
+                    <div class="highlight"><pre><span></span><span class="k">@prefix</span><span class="w"> </span><span class="nn">expandedlicensing:</span><span class="w"> </span><span class="nv">&lt;https://spdx.org/rdf/v3/ExpandedLicensing/&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">ns0:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2003/06/sw-vocab-status/ns#&gt;</span><span class="w"> </span><span class="p">.</span>
 <span class="k">@prefix</span><span class="w"> </span><span class="nn">owl:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2002/07/owl#&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">rdf:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span><span class="w"> </span><span class="p">.</span>
 <span class="k">@prefix</span><span class="w"> </span><span class="nn">rdfs:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span><span class="w"> </span><span class="p">.</span>
-<span class="k">@prefix</span><span class="w"> </span><span class="nn">simplelicensing:</span><span class="w"> </span><span class="nv">&lt;https://spdx.org/rdf/v3/SimpleLicensing/&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">sh:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/ns/shacl#&gt;</span><span class="w"> </span><span class="p">.</span>
 <span class="k">@prefix</span><span class="w"> </span><span class="nn">xsd:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span><span class="w"> </span><span class="p">.</span>
 
-<span class="nn">simplelicensing</span><span class="p">:</span><span class="nt">licenseExpression</span> <span class="kt">a</span> <span class="nn">owl</span><span class="p">:</span><span class="nt">DatatypeProperty</span> <span class="p">;</span>
-    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">comment</span> <span class="s">&quot;&quot;&quot;Often a single license can be used to represent the licensing terms of a source code or binary file, but there are situations where a single license identifier is not sufficient. A common example is when software is offered under a choice of one or more licenses (e.g., GPL-2.0-only OR BSD-3-Clause). Another example is when a set of licenses is needed to represent a binary program constructed by compiling and linking two (or more) different source files each governed by different licenses (e.g., LGPL-2.1-only AND BSD-3-Clause).</span>
-
-<span class="s">SPDX License Expressions provide a way for one to construct expressions that more accurately represent the licensing terms typically found in open source software source code. A license expression could be a single license identifier found on the SPDX License List; a user defined license reference denoted by the LicenseRef-idString; a license identifier combined with an SPDX exception; or some combination of license identifiers, license references and exceptions constructed using a small set of defined operators (e.g., AND, OR, WITH and +). We provide the definition of what constitutes a valid an SPDX License Expression in this section.&quot;&quot;&quot; ;</span>
-<span class="s">    rdfs:domain simplelicensing:LicenseExpression ;</span>
+<span class="nn">expandedlicensing</span><span class="p">:</span><span class="nt">licenseXml</span> <span class="kt">a</span> <span class="nn">owl</span><span class="p">:</span><span class="nt">DatatypeProperty</span> <span class="p">;</span>
+    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">comment</span> <span class="s">&quot;&quot;&quot;The license XML format is defined and used by the SPDX legal team.</span>
+<span class="s">See the XML fields defined at https://github.com/spdx/license-list-XML/blob/main/DOCS/xml-fields.md for a text description.</span>
+<span class="s">There is also an XML schema available at https://github.com/spdx/license-list-XML/blob/main/schema/ListedLicense.xsd.&quot;&quot;&quot; ;</span>
 <span class="s">    rdfs:range xsd:string ;</span>
-<span class="s">    ns0:term_status &quot;Stable&quot; .</span>
+<span class="s">    ns0:term_status &quot;Stable&quot; ;</span>
+<span class="s">    sh:or ( [ rdfs:domain expandedlicensing:License,</span>
+<span class="s">                    expandedlicensing:LicenseAddition ] ) .</span>
 </pre></div>
 
 
@@ -1175,7 +1183,7 @@ $('#search-input-sidebar').keyup(function() {
 
     $(document).ready(function (){
       $('#sidebar-wrapper').animate({
-          scrollTop: $("#sd_169").offset().top - 100
+          scrollTop: $("#sd_147").offset().top - 100
       }, 100);
     });
 
