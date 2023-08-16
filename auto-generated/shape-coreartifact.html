@@ -1058,12 +1058,6 @@ such as an electronic file, a software package, a device or an element of data.<
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;releaseTime&quot; ;</span>
 <span class="s">            sh:path core:releaseTime ],</span>
-<span class="s">        [ sh:class core:Agent ;</span>
-<span class="s">            sh:name &quot;originatedBy&quot; ;</span>
-<span class="s">            sh:path core:originatedBy ],</span>
-<span class="s">        [ sh:class core:Agent ;</span>
-<span class="s">            sh:name &quot;suppliedBy&quot; ;</span>
-<span class="s">            sh:path core:suppliedBy ],</span>
 <span class="s">        [ sh:datatype core:DateTime ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;validUntilTime&quot; ;</span>
@@ -1072,9 +1066,16 @@ such as an electronic file, a software package, a device or an element of data.<
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;builtTime&quot; ;</span>
 <span class="s">            sh:path core:builtTime ],</span>
+<span class="s">        [ sh:class core:Agent ;</span>
+<span class="s">            sh:name &quot;originatedBy&quot; ;</span>
+<span class="s">            sh:path core:originatedBy ],</span>
 <span class="s">        [ sh:datatype xsd:string ;</span>
 <span class="s">            sh:name &quot;standard&quot; ;</span>
-<span class="s">            sh:path core:standard ] .</span>
+<span class="s">            sh:path core:standard ],</span>
+<span class="s">        [ sh:class core:Agent ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:name &quot;suppliedBy&quot; ;</span>
+<span class="s">            sh:path core:suppliedBy ] .</span>
 </pre></div>
 
             
@@ -1104,7 +1105,7 @@ such as an electronic file, a software package, a device or an element of data.<
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Sun, 13 Aug 2023 17:10:44 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Wed, 16 Aug 2023 18:32:27 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>
@@ -1165,7 +1166,7 @@ $('#search-input-sidebar').keyup(function() {
 
     $(document).ready(function (){
       $('#sidebar-wrapper').animate({
-          scrollTop: $("#sd_315").offset().top - 100
+          scrollTop: $("#sd_360").offset().top - 100
       }, 100);
     });
 
