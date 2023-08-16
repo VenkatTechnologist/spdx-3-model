@@ -950,8 +950,6 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                       
                         <li><a href="class-expandedlicensinglicenseaddition.html" title="'LicenseAddition' - A LicenseAddition represents text which is intended to be added to a License as additional text, but which is not..">expandedlicensing:LicenseAddition</a></li>
                       
-                        <li><a href="class-securityvulnerability.html" title="'Vulnerability' - Specifies a vulnerability and its associated information. **Syntax** ```json { &#34;@type&#34;: &#34;Vulnerability&#34;, &#34;@id&#34;: &#34;urn:spdx.dev:vuln-1&#34;, &#34;summary&#34;: &#34;Use of a Broken or..">security:Vulnerability</a></li>
-                      
                         <li><a href="class-simplelicensinganylicenseinfo.html" title="'AnyLicenseInfo' - An AnyLicenseInfo is used by licensing properties of software artifacts. It can be a NoneLicense, a NoAssertionLicense, single license (either..">simplelicensing:AnyLicenseInfo</a></li>
                       
                         <li><a href="class-simplelicensingsimplelicensingtext.html" title="'SimpleLicensingText' - A SimpleLicensingText represents a License or Addition that is not listed on the SPDX License List at https://spdx.org/licenses, and is..">simplelicensing:SimpleLicensingText</a></li>
@@ -1531,10 +1529,7 @@ where multiple, equivalent official translations exist.</span>
 <span class="s">and inter-relatable content objects.&quot;&quot;&quot; ;</span>
 <span class="s">    rdfs:subClassOf owl:Thing ;</span>
 <span class="s">    ns0:term_status &quot;Stable&quot; ;</span>
-<span class="s">    sh:property [ sh:class core:ExternalIdentifier ;</span>
-<span class="s">            sh:name &quot;externalIdentifier&quot; ;</span>
-<span class="s">            sh:path core:externalIdentifier ],</span>
-<span class="s">        [ sh:datatype xsd:string ;</span>
+<span class="s">    sh:property [ sh:datatype xsd:string ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;summary&quot; ;</span>
 <span class="s">            sh:path core:summary ],</span>
@@ -1542,14 +1537,6 @@ where multiple, equivalent official translations exist.</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;description&quot; ;</span>
 <span class="s">            sh:path core:description ],</span>
-<span class="s">        [ sh:class core:IntegrityMethod ;</span>
-<span class="s">            sh:name &quot;verifiedUsing&quot; ;</span>
-<span class="s">            sh:path core:verifiedUsing ],</span>
-<span class="s">        [ sh:class core:CreationInfo ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:minCount 1 ;</span>
-<span class="s">            sh:name &quot;creationInfo&quot; ;</span>
-<span class="s">            sh:path core:creationInfo ],</span>
 <span class="s">        [ sh:datatype core:Extension ;</span>
 <span class="s">            sh:name &quot;extension&quot; ;</span>
 <span class="s">            sh:path core:extension ],</span>
@@ -1558,12 +1545,23 @@ where multiple, equivalent official translations exist.</span>
 <span class="s">            sh:path core:externalRef ],</span>
 <span class="s">        [ sh:datatype xsd:string ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;name&quot; ;</span>
-<span class="s">            sh:path core:name ],</span>
+<span class="s">            sh:name &quot;comment&quot; ;</span>
+<span class="s">            sh:path core:comment ],</span>
+<span class="s">        [ sh:class core:ExternalIdentifier ;</span>
+<span class="s">            sh:name &quot;externalIdentifier&quot; ;</span>
+<span class="s">            sh:path core:externalIdentifier ],</span>
+<span class="s">        [ sh:class core:IntegrityMethod ;</span>
+<span class="s">            sh:name &quot;verifiedUsing&quot; ;</span>
+<span class="s">            sh:path core:verifiedUsing ],</span>
+<span class="s">        [ sh:class core:CreationInfo ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:minCount 1 ;</span>
+<span class="s">            sh:name &quot;creationInfo&quot; ;</span>
+<span class="s">            sh:path core:creationInfo ],</span>
 <span class="s">        [ sh:datatype xsd:string ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;comment&quot; ;</span>
-<span class="s">            sh:path core:comment ] .</span>
+<span class="s">            sh:name &quot;name&quot; ;</span>
+<span class="s">            sh:path core:name ] .</span>
 </pre></div>
 
             
@@ -1593,7 +1591,7 @@ where multiple, equivalent official translations exist.</span>
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Wed, 16 Aug 2023 18:32:26 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Wed, 16 Aug 2023 18:33:03 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>
