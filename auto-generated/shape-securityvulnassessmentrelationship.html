@@ -1071,26 +1071,26 @@ External property restriction on /Core/Relationship/to: minCount: 1</p>
 <span class="s">External property restriction on /Core/Relationship/to: minCount: 1&quot;&quot;&quot; ;</span>
 <span class="s">    rdfs:subClassOf core:Relationship ;</span>
 <span class="s">    ns0:term_status &quot;Stable&quot; ;</span>
-<span class="s">    sh:property [ sh:datatype core:DateTime ;</span>
+<span class="s">    sh:property [ sh:class core:Agent ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:name &quot;suppliedBy&quot; ;</span>
+<span class="s">            sh:path security:suppliedBy ],</span>
+<span class="s">        [ sh:datatype core:DateTime ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:name &quot;modifiedTime&quot; ;</span>
+<span class="s">            sh:path security:modifiedTime ],</span>
+<span class="s">        [ sh:datatype core:DateTime ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;publishedTime&quot; ;</span>
 <span class="s">            sh:path security:publishedTime ],</span>
-<span class="s">        [ sh:datatype core:DateTime ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;withdrawnTime&quot; ;</span>
-<span class="s">            sh:path security:withdrawnTime ],</span>
 <span class="s">        [ sh:class core:Element ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;assessedElement&quot; ;</span>
 <span class="s">            sh:path security:assessedElement ],</span>
 <span class="s">        [ sh:datatype core:DateTime ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;modifiedTime&quot; ;</span>
-<span class="s">            sh:path security:modifiedTime ],</span>
-<span class="s">        [ sh:class core:Agent ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;suppliedBy&quot; ;</span>
-<span class="s">            sh:path security:suppliedBy ] .</span>
+<span class="s">            sh:name &quot;withdrawnTime&quot; ;</span>
+<span class="s">            sh:path security:withdrawnTime ] .</span>
 </pre></div>
 
             
@@ -1120,7 +1120,7 @@ External property restriction on /Core/Relationship/to: minCount: 1</p>
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Wed, 16 Aug 2023 18:57:03 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Wed, 16 Aug 2023 19:03:58 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>
@@ -1181,7 +1181,7 @@ $('#search-input-sidebar').keyup(function() {
 
     $(document).ready(function (){
       $('#sidebar-wrapper').animate({
-          scrollTop: $("#sd_345").offset().top - 100
+          scrollTop: $("#sd_349").offset().top - 100
       }, 100);
     });
 
