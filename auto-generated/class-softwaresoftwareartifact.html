@@ -1329,8 +1329,8 @@ following applies:
                           <i>owl:ObjectProperty<i>
                         </td>
                         <td class="thirdtd">
-                          <span>Identify the actual distribution source for the Artifact being referenced.
-This might or might not be different from the originating distribution source for the artifact.</span>
+                          <span>Identify the actual distribution source for the artifact (e.g., snippet, file, package, vulnerability) or VulnAssessmentRelationship being referenced.
+This might or might not be different from the originating distribution source for the artifact (e.g., snippet, file, package, vulnerability) or VulnAssessmentRelationship..</span>
                         </td>
                         <td class="fourthtd">
                           
@@ -1832,17 +1832,17 @@ where multiple, equivalent official translations exist.</span>
 <span class="s">        [ sh:datatype xsd:string ;</span>
 <span class="s">            sh:name &quot;attributionText&quot; ;</span>
 <span class="s">            sh:path software:attributionText ],</span>
+<span class="s">        [ sh:datatype xsd:string ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:name &quot;copyrightText&quot; ;</span>
+<span class="s">            sh:path software:copyrightText ],</span>
 <span class="s">        [ sh:class software:SoftwarePurpose ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;primaryPurpose&quot; ;</span>
 <span class="s">            sh:path software:primaryPurpose ],</span>
 <span class="s">        [ sh:class software:SoftwarePurpose ;</span>
 <span class="s">            sh:name &quot;additionalPurpose&quot; ;</span>
-<span class="s">            sh:path software:additionalPurpose ],</span>
-<span class="s">        [ sh:datatype xsd:string ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;copyrightText&quot; ;</span>
-<span class="s">            sh:path software:copyrightText ] .</span>
+<span class="s">            sh:path software:additionalPurpose ] .</span>
 </pre></div>
 
             
@@ -1872,7 +1872,7 @@ where multiple, equivalent official translations exist.</span>
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Wed, 16 Aug 2023 18:33:04 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Wed, 16 Aug 2023 18:33:13 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>
