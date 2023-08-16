@@ -625,7 +625,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
           
               <li class="second-level" style="line-height: 20px;" id="sd_118"><a   href="prop-corespecversion.html">core:specVersion</a></li>
           
-              <li class="second-level" style="line-height: 20px;" id="sd_119"><a class="active"  href="prop-corestandard.html">core:standard</a></li>
+              <li class="second-level" style="line-height: 20px;" id="sd_119"><a   href="prop-corestandard.html">core:standard</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_120"><a   href="prop-corestarttime.html">core:startTime</a></li>
           
@@ -755,7 +755,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
           
               <li class="second-level" style="line-height: 20px;" id="sd_168"><a   href="prop-securitywithdrawntime.html">security:withdrawnTime</a></li>
           
-              <li class="second-level" style="line-height: 20px;" id="sd_224"><a   href="prop-simplelicensingcustomidtouri.html">simplelicensing:customIdToUri</a></li>
+              <li class="second-level" style="line-height: 20px;" id="sd_224"><a class="active"  href="prop-simplelicensingcustomidtouri.html">simplelicensing:customIdToUri</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_169"><a   href="prop-simplelicensinglicenseexpression.html">simplelicensing:licenseExpression</a></li>
           
@@ -898,7 +898,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
           <a href="entities-tree-properties.html">Properties</a>
     </li>
       <li class="active">
-            core:standard
+            simplelicensing:customIdToUri
         </li>
   </ol>
 
@@ -922,7 +922,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 
             <h1>
 
-                core:standard
+                simplelicensing:customIdToUri
                 
                     <small class="label label-info label-xs ">leaf node</small>
                   
@@ -941,7 +941,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <li><a href="entities-tree-properties.html">rdf:Property</a>
 
                           <ul>
-                            <li><a style="font-weight: bold;" title="'standard' - Various standards may be relevant to useful to capture for specific artifacts.">core:standard</a>
+                            <li><a style="font-weight: bold;" title="'customIdToUri' - Within a License Expression, references can be made to a Custom License or a Custom License Addition. The License Expression..">simplelicensing:customIdToUri</a>
 
                             
                               </li>
@@ -965,7 +965,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
              </div>
              <div class="panel-body">
 
-                 <code>https://spdx.org/rdf/v3/Core/standard</code>
+                 <code>https://spdx.org/rdf/v3/SimpleLicensing/customIdToUri</code>
              </div>
            </div>
             </div></div>
@@ -980,7 +980,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
              </div>
              <div class="panel-body">
 
-                 standard
+                 customIdToUri
              </div>
            </div>
             </div></div>
@@ -995,7 +995,10 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
             </div>
             <div class="panel-body">
 
-                <p>Various standards may be relevant to useful to capture for specific artifacts.</p>
+                <p>Within a License Expression, references can be made to a Custom License or a Custom License Addition.<br>
+The License Expression syntax dictates any refence starting with a &#34;LicenseRef-&#34; or &#34;AdditionRef-&#34; refers to license or addition text not found in the SPDX list of licenses.<br>
+These custom licenses must be a CustomLicense, a CustomLicenseAddtion, or a SimpleLicensingText which are identified with a unique URI identifier.<br>
+The key for the DictionaryEntry is the string used in the license expression and the value is the URI for the corrosponding CustomLicense, CustomLicenseAddition, or SimpleLicensingText.</p>
             </div>
           </div>
            </div></div>
@@ -1026,7 +1029,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                      
                          
                          
-                              <a href="class-coreartifact.html" title="https://spdx.org/rdf/v3/Core/Artifact">core:Artifact</a>
+                              <a href="class-simplelicensinglicenseexpression.html" title="https://spdx.org/rdf/v3/SimpleLicensing/LicenseExpression">simplelicensing:LicenseExpression</a>
                            
                            
                          
@@ -1034,15 +1037,15 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                    </td>
 
                     <td>
-                      core:standard
+                      simplelicensing:customIdToUri
                     </td>
 
                     <td>
                       
                           
                           
-                               <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">xsd:string</a>
-                             
+                               <a href="class-coredictionaryentry.html" title="https://spdx.org/rdf/v3/Core/DictionaryEntry">core:DictionaryEntry</a>
+                            
                             
                           
                       
@@ -1067,13 +1070,16 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="k">@prefix</span><span class="w"> </span><span class="nn">ns0:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2003/06/sw-vocab-status/ns#&gt;</span><span class="w"> </span><span class="p">.</span>
 <span class="k">@prefix</span><span class="w"> </span><span class="nn">owl:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2002/07/owl#&gt;</span><span class="w"> </span><span class="p">.</span>
 <span class="k">@prefix</span><span class="w"> </span><span class="nn">rdfs:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span><span class="w"> </span><span class="p">.</span>
-<span class="k">@prefix</span><span class="w"> </span><span class="nn">xsd:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">simplelicensing:</span><span class="w"> </span><span class="nv">&lt;https://spdx.org/rdf/v3/SimpleLicensing/&gt;</span><span class="w"> </span><span class="p">.</span>
 
-<span class="nn">core</span><span class="p">:</span><span class="nt">standard</span> <span class="kt">a</span> <span class="nn">owl</span><span class="p">:</span><span class="nt">DatatypeProperty</span> <span class="p">;</span>
-    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">comment</span> <span class="s">&quot;Various standards may be relevant to useful to capture for specific artifacts.&quot;</span> <span class="p">;</span>
-    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">domain</span> <span class="nn">core</span><span class="p">:</span><span class="nt">Artifact</span> <span class="p">;</span>
-    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">range</span> <span class="nn">xsd</span><span class="p">:</span><span class="nt">string</span> <span class="p">;</span>
-    <span class="nn">ns0</span><span class="p">:</span><span class="nt">term_status</span> <span class="s">&quot;Stable&quot;</span> <span class="p">.</span>
+<span class="nn">simplelicensing</span><span class="p">:</span><span class="nt">customIdToUri</span> <span class="kt">a</span> <span class="nn">owl</span><span class="p">:</span><span class="nt">ObjectProperty</span> <span class="p">;</span>
+    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">comment</span> <span class="s">&quot;&quot;&quot;Within a License Expression, references can be made to a Custom License or a Custom License Addition.</span>
+<span class="s">The License Expression syntax dictates any refence starting with a &quot;LicenseRef-&quot; or &quot;AdditionRef-&quot; refers to license or addition text not found in the SPDX list of licenses.</span>
+<span class="s">These custom licenses must be a CustomLicense, a CustomLicenseAddtion, or a SimpleLicensingText which are identified with a unique URI identifier.</span>
+<span class="s">The key for the DictionaryEntry is the string used in the license expression and the value is the URI for the corrosponding CustomLicense, CustomLicenseAddition, or SimpleLicensingText.&quot;&quot;&quot; ;</span>
+<span class="s">    rdfs:domain simplelicensing:LicenseExpression ;</span>
+<span class="s">    rdfs:range core:DictionaryEntry ;</span>
+<span class="s">    ns0:term_status &quot;Stable&quot; .</span>
 </pre></div>
 
 
@@ -1173,7 +1179,7 @@ $('#search-input-sidebar').keyup(function() {
 
     $(document).ready(function (){
       $('#sidebar-wrapper').animate({
-          scrollTop: $("#sd_119").offset().top - 100
+          scrollTop: $("#sd_224").offset().top - 100
       }, 100);
     });
 

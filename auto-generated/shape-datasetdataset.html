@@ -493,7 +493,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
         
 
         
-            <li class="-second-level" id="sd_properties"><a  href="entities-tree-properties.html">Properties (149)</a>
+            <li class="-second-level" id="sd_properties"><a  href="entities-tree-properties.html">Properties (150)</a>
             </li>
 
             
@@ -758,17 +758,19 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
           
               <li class="second-level" style="line-height: 20px;" id="sd_168"><a   href="prop-securitywithdrawntime.html">security:withdrawnTime</a></li>
           
+              <li class="second-level" style="line-height: 20px;" id="sd_224"><a   href="prop-simplelicensingcustomidtouri.html">simplelicensing:customIdToUri</a></li>
+          
               <li class="second-level" style="line-height: 20px;" id="sd_169"><a   href="prop-simplelicensinglicenseexpression.html">simplelicensing:licenseExpression</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_170"><a   href="prop-simplelicensinglicensetext.html">simplelicensing:licenseText</a></li>
           
-              <li class="second-level" style="line-height: 20px;" id="sd_224"><a   href="prop-softwareadditionalpurpose.html">software:additionalPurpose</a></li>
+              <li class="second-level" style="line-height: 20px;" id="sd_225"><a   href="prop-softwareadditionalpurpose.html">software:additionalPurpose</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_171"><a   href="prop-softwareattributiontext.html">software:attributionText</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_172"><a   href="prop-softwarebyterange.html">software:byteRange</a></li>
           
-              <li class="second-level" style="line-height: 20px;" id="sd_225"><a   href="prop-softwareconditionality.html">software:conditionality</a></li>
+              <li class="second-level" style="line-height: 20px;" id="sd_226"><a   href="prop-softwareconditionality.html">software:conditionality</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_173"><a   href="prop-softwarecontentidentifier.html">software:contentIdentifier</a></li>
           
@@ -786,13 +788,13 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
           
               <li class="second-level" style="line-height: 20px;" id="sd_180"><a   href="prop-softwarepackageversion.html">software:packageVersion</a></li>
           
-              <li class="second-level" style="line-height: 20px;" id="sd_226"><a   href="prop-softwareprimarypurpose.html">software:primaryPurpose</a></li>
+              <li class="second-level" style="line-height: 20px;" id="sd_227"><a   href="prop-softwareprimarypurpose.html">software:primaryPurpose</a></li>
           
-              <li class="second-level" style="line-height: 20px;" id="sd_227"><a   href="prop-softwaresbomtype.html">software:sbomType</a></li>
+              <li class="second-level" style="line-height: 20px;" id="sd_228"><a   href="prop-softwaresbomtype.html">software:sbomType</a></li>
           
-              <li class="second-level" style="line-height: 20px;" id="sd_228"><a   href="prop-softwaresnippetfromfile.html">software:snippetFromFile</a></li>
+              <li class="second-level" style="line-height: 20px;" id="sd_229"><a   href="prop-softwaresnippetfromfile.html">software:snippetFromFile</a></li>
           
-              <li class="second-level" style="line-height: 20px;" id="sd_229"><a   href="prop-softwaresoftwarelinkage.html">software:softwareLinkage</a></li>
+              <li class="second-level" style="line-height: 20px;" id="sd_230"><a   href="prop-softwaresoftwarelinkage.html">software:softwareLinkage</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_181"><a   href="prop-softwaresourceinfo.html">software:sourceInfo</a></li>
           
@@ -1066,50 +1068,50 @@ External property restriction on /Core/Artifact/builtTime: minCount: 1</p>
 <span class="s">External property restriction on /Core/Artifact/builtTime: minCount: 1&quot;&quot;&quot; ;</span>
 <span class="s">    rdfs:subClassOf software:Package ;</span>
 <span class="s">    ns0:term_status &quot;Stable&quot; ;</span>
-<span class="s">    sh:property [ sh:datatype xsd:string ;</span>
-<span class="s">            sh:name &quot;dataPreprocessing&quot; ;</span>
-<span class="s">            sh:path dataset:dataPreprocessing ],</span>
-<span class="s">        [ sh:class dataset:DatasetAvailabilityType ;</span>
+<span class="s">    sh:property [ sh:datatype xsd:nonNegativeInteger ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;datasetAvailability&quot; ;</span>
-<span class="s">            sh:path dataset:datasetAvailability ],</span>
-<span class="s">        [ sh:datatype xsd:string ;</span>
-<span class="s">            sh:name &quot;knownBias&quot; ;</span>
-<span class="s">            sh:path dataset:knownBias ],</span>
+<span class="s">            sh:name &quot;datasetSize&quot; ;</span>
+<span class="s">            sh:path dataset:datasetSize ],</span>
 <span class="s">        [ sh:datatype xsd:string ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;datasetNoise&quot; ;</span>
 <span class="s">            sh:path dataset:datasetNoise ],</span>
 <span class="s">        [ sh:datatype xsd:string ;</span>
-<span class="s">            sh:name &quot;anonymizationMethodUsed&quot; ;</span>
-<span class="s">            sh:path dataset:anonymizationMethodUsed ],</span>
+<span class="s">            sh:name &quot;dataPreprocessing&quot; ;</span>
+<span class="s">            sh:path dataset:dataPreprocessing ],</span>
 <span class="s">        [ sh:datatype xsd:string ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;datasetUpdateMechanism&quot; ;</span>
 <span class="s">            sh:path dataset:datasetUpdateMechanism ],</span>
-<span class="s">        [ sh:datatype xsd:string ;</span>
+<span class="s">        [ sh:class dataset:DatasetAvailabilityType ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;intendedUse&quot; ;</span>
-<span class="s">            sh:path dataset:intendedUse ],</span>
-<span class="s">        [ sh:datatype xsd:nonNegativeInteger ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;datasetSize&quot; ;</span>
-<span class="s">            sh:path dataset:datasetSize ],</span>
-<span class="s">        [ sh:class core:DictionaryEntry ;</span>
-<span class="s">            sh:name &quot;sensor&quot; ;</span>
-<span class="s">            sh:path dataset:sensor ],</span>
-<span class="s">        [ sh:datatype xsd:string ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;dataCollectionProcess&quot; ;</span>
-<span class="s">            sh:path dataset:dataCollectionProcess ],</span>
+<span class="s">            sh:name &quot;datasetAvailability&quot; ;</span>
+<span class="s">            sh:path dataset:datasetAvailability ],</span>
 <span class="s">        [ sh:class dataset:DatasetType ;</span>
 <span class="s">            sh:minCount 1 ;</span>
 <span class="s">            sh:name &quot;datasetType&quot; ;</span>
 <span class="s">            sh:path dataset:datasetType ],</span>
+<span class="s">        [ sh:datatype xsd:string ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:name &quot;dataCollectionProcess&quot; ;</span>
+<span class="s">            sh:path dataset:dataCollectionProcess ],</span>
+<span class="s">        [ sh:class core:DictionaryEntry ;</span>
+<span class="s">            sh:name &quot;sensor&quot; ;</span>
+<span class="s">            sh:path dataset:sensor ],</span>
 <span class="s">        [ sh:class dataset:ConfidentialityLevelType ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;confidentialityLevel&quot; ;</span>
 <span class="s">            sh:path dataset:confidentialityLevel ],</span>
+<span class="s">        [ sh:datatype xsd:string ;</span>
+<span class="s">            sh:name &quot;anonymizationMethodUsed&quot; ;</span>
+<span class="s">            sh:path dataset:anonymizationMethodUsed ],</span>
+<span class="s">        [ sh:datatype xsd:string ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:name &quot;intendedUse&quot; ;</span>
+<span class="s">            sh:path dataset:intendedUse ],</span>
+<span class="s">        [ sh:datatype xsd:string ;</span>
+<span class="s">            sh:name &quot;knownBias&quot; ;</span>
+<span class="s">            sh:path dataset:knownBias ],</span>
 <span class="s">        [ sh:class core:PresenceType ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;sensitivePersonalInformation&quot; ;</span>
@@ -1143,7 +1145,7 @@ External property restriction on /Core/Artifact/builtTime: minCount: 1</p>
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Wed, 16 Aug 2023 18:33:14 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Wed, 16 Aug 2023 18:54:55 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>
@@ -1204,7 +1206,7 @@ $('#search-input-sidebar').keyup(function() {
 
     $(document).ready(function (){
       $('#sidebar-wrapper').animate({
-          scrollTop: $("#sd_366").offset().top - 100
+          scrollTop: $("#sd_360").offset().top - 100
       }, 100);
     });
 
