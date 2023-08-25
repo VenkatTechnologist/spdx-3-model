@@ -641,7 +641,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
           
               <li class="second-level" style="line-height: 20px;" id="sd_123"><a   href="prop-corevaliduntiltime.html">core:validUntilTime</a></li>
           
-              <li class="second-level" style="line-height: 20px;" id="sd_124"><a class="active"  href="prop-corevalue.html">core:value</a></li>
+              <li class="second-level" style="line-height: 20px;" id="sd_124"><a   href="prop-corevalue.html">core:value</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_213"><a   href="prop-coreverifiedusing.html">core:verifiedUsing</a></li>
           
@@ -759,7 +759,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
           
               <li class="second-level" style="line-height: 20px;" id="sd_169"><a   href="prop-simplelicensinglicenseexpression.html">simplelicensing:licenseExpression</a></li>
           
-              <li class="second-level" style="line-height: 20px;" id="sd_170"><a   href="prop-simplelicensinglicenselistversion.html">simplelicensing:licenseListVersion</a></li>
+              <li class="second-level" style="line-height: 20px;" id="sd_170"><a class="active"  href="prop-simplelicensinglicenselistversion.html">simplelicensing:licenseListVersion</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_171"><a   href="prop-simplelicensinglicensetext.html">simplelicensing:licenseText</a></li>
           
@@ -900,7 +900,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
           <a href="entities-tree-properties.html">Properties</a>
     </li>
       <li class="active">
-            core:value
+            simplelicensing:licenseListVersion
         </li>
   </ol>
 
@@ -924,7 +924,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 
             <h1>
 
-                core:value
+                simplelicensing:licenseListVersion
                 
                     <small class="label label-info label-xs ">leaf node</small>
                   
@@ -943,7 +943,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <li><a href="entities-tree-properties.html">rdf:Property</a>
 
                           <ul>
-                            <li><a style="font-weight: bold;" title="'value' - A value used in a generic key-value pair. A key-value pair can be used to implement a dictionary which associates..">core:value</a>
+                            <li><a style="font-weight: bold;" title="'licenseListVersion' - Recognizing that licenses are added to the SPDX License List with each subsequent version, the intent is to provide consumers..">simplelicensing:licenseListVersion</a>
 
                             
                               </li>
@@ -967,7 +967,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
              </div>
              <div class="panel-body">
 
-                 <code>https://spdx.org/rdf/v3/Core/value</code>
+                 <code>https://spdx.org/rdf/v3/SimpleLicensing/licenseListVersion</code>
              </div>
            </div>
             </div></div>
@@ -982,7 +982,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
              </div>
              <div class="panel-body">
 
-                 value
+                 licenseListVersion
              </div>
            </div>
             </div></div>
@@ -997,8 +997,9 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
             </div>
             <div class="panel-body">
 
-                <p>A value used in a generic key-value pair.<br>
-A key-value pair can be used to implement a dictionary which associates a key with a value.</p>
+                <p>Recognizing that licenses are added to the SPDX License List with each subsequent version, the intent is to provide consumers with the version of the SPDX License List used. <br>
+This anticipates that in the future, license expression might have used a version of the SPDX License List that is older than the then current one.<br>
+The specified version of the SPDX License List must include all listed licenses and exceptions referenced in the expression.</p>
             </div>
           </div>
            </div></div>
@@ -1029,7 +1030,7 @@ A key-value pair can be used to implement a dictionary which associates a key wi
                      
                          
                          
-                              <a href="class-coredictionaryentry.html" title="https://spdx.org/rdf/v3/Core/DictionaryEntry">core:DictionaryEntry</a>
+                              <a href="class-simplelicensinglicenseexpression.html" title="https://spdx.org/rdf/v3/SimpleLicensing/LicenseExpression">simplelicensing:LicenseExpression</a>
                            
                            
                          
@@ -1037,15 +1038,15 @@ A key-value pair can be used to implement a dictionary which associates a key wi
                    </td>
 
                     <td>
-                      core:value
+                      simplelicensing:licenseListVersion
                     </td>
 
                     <td>
                       
                           
                           
-                               <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">xsd:string</a>
-                             
+                               <a href="class-coresemver.html" title="https://spdx.org/rdf/v3/Core/SemVer">core:SemVer</a>
+                            
                             
                           
                       
@@ -1070,13 +1071,14 @@ A key-value pair can be used to implement a dictionary which associates a key wi
 <span class="k">@prefix</span><span class="w"> </span><span class="nn">ns0:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2003/06/sw-vocab-status/ns#&gt;</span><span class="w"> </span><span class="p">.</span>
 <span class="k">@prefix</span><span class="w"> </span><span class="nn">owl:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2002/07/owl#&gt;</span><span class="w"> </span><span class="p">.</span>
 <span class="k">@prefix</span><span class="w"> </span><span class="nn">rdfs:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span><span class="w"> </span><span class="p">.</span>
-<span class="k">@prefix</span><span class="w"> </span><span class="nn">xsd:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">simplelicensing:</span><span class="w"> </span><span class="nv">&lt;https://spdx.org/rdf/v3/SimpleLicensing/&gt;</span><span class="w"> </span><span class="p">.</span>
 
-<span class="nn">core</span><span class="p">:</span><span class="nt">value</span> <span class="kt">a</span> <span class="nn">owl</span><span class="p">:</span><span class="nt">DatatypeProperty</span> <span class="p">;</span>
-    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">comment</span> <span class="s">&quot;&quot;&quot;A value used in a generic key-value pair.</span>
-<span class="s">A key-value pair can be used to implement a dictionary which associates a key with a value.&quot;&quot;&quot; ;</span>
-<span class="s">    rdfs:domain core:DictionaryEntry ;</span>
-<span class="s">    rdfs:range xsd:string ;</span>
+<span class="nn">simplelicensing</span><span class="p">:</span><span class="nt">licenseListVersion</span> <span class="kt">a</span> <span class="nn">owl</span><span class="p">:</span><span class="nt">DatatypeProperty</span> <span class="p">;</span>
+    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">comment</span> <span class="s">&quot;&quot;&quot;Recognizing that licenses are added to the SPDX License List with each subsequent version, the intent is to provide consumers with the version of the SPDX License List used. </span>
+<span class="s">This anticipates that in the future, license expression might have used a version of the SPDX License List that is older than the then current one.</span>
+<span class="s">The specified version of the SPDX License List must include all listed licenses and exceptions referenced in the expression.&quot;&quot;&quot; ;</span>
+<span class="s">    rdfs:domain simplelicensing:LicenseExpression ;</span>
+<span class="s">    rdfs:range core:SemVer ;</span>
 <span class="s">    ns0:term_status &quot;Stable&quot; .</span>
 </pre></div>
 
@@ -1177,7 +1179,7 @@ $('#search-input-sidebar').keyup(function() {
 
     $(document).ready(function (){
       $('#sidebar-wrapper').animate({
-          scrollTop: $("#sd_124").offset().top - 100
+          scrollTop: $("#sd_170").offset().top - 100
       }, 100);
     });
 
