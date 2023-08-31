@@ -1039,6 +1039,11 @@ that uniquely identifies an Element.</p>
 <span class="s">            sh:minCount 1 ;</span>
 <span class="s">            sh:name &quot;identifier&quot; ;</span>
 <span class="s">            sh:path core:identifier ],</span>
+<span class="s">        [ sh:class core:ExternalIdentifierType ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:minCount 1 ;</span>
+<span class="s">            sh:name &quot;externalIdentifierType&quot; ;</span>
+<span class="s">            sh:path core:externalIdentifierType ],</span>
 <span class="s">        [ sh:datatype xsd:anyURI ;</span>
 <span class="s">            sh:name &quot;identifierLocator&quot; ;</span>
 <span class="s">            sh:path core:identifierLocator ],</span>
@@ -1046,11 +1051,6 @@ that uniquely identifies an Element.</p>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;comment&quot; ;</span>
 <span class="s">            sh:path core:comment ],</span>
-<span class="s">        [ sh:class core:ExternalIdentifierType ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:minCount 1 ;</span>
-<span class="s">            sh:name &quot;externalIdentifierType&quot; ;</span>
-<span class="s">            sh:path core:externalIdentifierType ],</span>
 <span class="s">        [ sh:datatype xsd:anyURI ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;issuingAuthority&quot; ;</span>
@@ -1084,7 +1084,7 @@ that uniquely identifies an Element.</p>
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Thu, 31 Aug 2023 18:26:03 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Thu, 31 Aug 2023 18:50:23 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>
@@ -1145,7 +1145,7 @@ $('#search-input-sidebar').keyup(function() {
 
     $(document).ready(function (){
       $('#sidebar-wrapper').animate({
-          scrollTop: $("#sd_365").offset().top - 100
+          scrollTop: $("#sd_363").offset().top - 100
       }, 100);
     });
 
