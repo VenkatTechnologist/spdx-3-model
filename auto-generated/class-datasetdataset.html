@@ -2272,14 +2272,17 @@ where multiple, equivalent official translations exist.</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;datasetUpdateMechanism&quot; ;</span>
 <span class="s">            sh:path dataset:datasetUpdateMechanism ],</span>
-<span class="s">        [ sh:class dataset:ConfidentialityLevelType ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;confidentialityLevel&quot; ;</span>
-<span class="s">            sh:path dataset:confidentialityLevel ],</span>
+<span class="s">        [ sh:class dataset:DatasetType ;</span>
+<span class="s">            sh:minCount 1 ;</span>
+<span class="s">            sh:name &quot;datasetType&quot; ;</span>
+<span class="s">            sh:path dataset:datasetType ],</span>
 <span class="s">        [ sh:datatype xsd:string ;</span>
+<span class="s">            sh:name &quot;knownBias&quot; ;</span>
+<span class="s">            sh:path dataset:knownBias ],</span>
+<span class="s">        [ sh:class dataset:DatasetAvailabilityType ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;dataCollectionProcess&quot; ;</span>
-<span class="s">            sh:path dataset:dataCollectionProcess ],</span>
+<span class="s">            sh:name &quot;datasetAvailability&quot; ;</span>
+<span class="s">            sh:path dataset:datasetAvailability ],</span>
 <span class="s">        [ sh:datatype xsd:string ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;intendedUse&quot; ;</span>
@@ -2287,24 +2290,6 @@ where multiple, equivalent official translations exist.</span>
 <span class="s">        [ sh:datatype xsd:string ;</span>
 <span class="s">            sh:name &quot;dataPreprocessing&quot; ;</span>
 <span class="s">            sh:path dataset:dataPreprocessing ],</span>
-<span class="s">        [ sh:datatype xsd:string ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;datasetNoise&quot; ;</span>
-<span class="s">            sh:path dataset:datasetNoise ],</span>
-<span class="s">        [ sh:datatype xsd:nonNegativeInteger ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;datasetSize&quot; ;</span>
-<span class="s">            sh:path dataset:datasetSize ],</span>
-<span class="s">        [ sh:datatype xsd:string ;</span>
-<span class="s">            sh:name &quot;anonymizationMethodUsed&quot; ;</span>
-<span class="s">            sh:path dataset:anonymizationMethodUsed ],</span>
-<span class="s">        [ sh:datatype xsd:string ;</span>
-<span class="s">            sh:name &quot;knownBias&quot; ;</span>
-<span class="s">            sh:path dataset:knownBias ],</span>
-<span class="s">        [ sh:class dataset:DatasetType ;</span>
-<span class="s">            sh:minCount 1 ;</span>
-<span class="s">            sh:name &quot;datasetType&quot; ;</span>
-<span class="s">            sh:path dataset:datasetType ],</span>
 <span class="s">        [ sh:class core:PresenceType ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;sensitivePersonalInformation&quot; ;</span>
@@ -2312,10 +2297,25 @@ where multiple, equivalent official translations exist.</span>
 <span class="s">        [ sh:class core:DictionaryEntry ;</span>
 <span class="s">            sh:name &quot;sensor&quot; ;</span>
 <span class="s">            sh:path dataset:sensor ],</span>
-<span class="s">        [ sh:class dataset:DatasetAvailabilityType ;</span>
+<span class="s">        [ sh:datatype xsd:string ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;datasetAvailability&quot; ;</span>
-<span class="s">            sh:path dataset:datasetAvailability ] .</span>
+<span class="s">            sh:name &quot;dataCollectionProcess&quot; ;</span>
+<span class="s">            sh:path dataset:dataCollectionProcess ],</span>
+<span class="s">        [ sh:class dataset:ConfidentialityLevelType ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:name &quot;confidentialityLevel&quot; ;</span>
+<span class="s">            sh:path dataset:confidentialityLevel ],</span>
+<span class="s">        [ sh:datatype xsd:string ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:name &quot;datasetNoise&quot; ;</span>
+<span class="s">            sh:path dataset:datasetNoise ],</span>
+<span class="s">        [ sh:datatype xsd:string ;</span>
+<span class="s">            sh:name &quot;anonymizationMethodUsed&quot; ;</span>
+<span class="s">            sh:path dataset:anonymizationMethodUsed ],</span>
+<span class="s">        [ sh:datatype xsd:nonNegativeInteger ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:name &quot;datasetSize&quot; ;</span>
+<span class="s">            sh:path dataset:datasetSize ] .</span>
 </pre></div>
 
             
@@ -2345,7 +2345,7 @@ where multiple, equivalent official translations exist.</span>
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Thu, 31 Aug 2023 18:50:23 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Fri, 01 Sep 2023 22:05:06 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>
