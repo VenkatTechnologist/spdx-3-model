@@ -1077,10 +1077,10 @@ External property restriction on /Core/Relationship/to: minCount: 1</p>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;modifiedTime&quot; ;</span>
 <span class="s">            sh:path security:modifiedTime ],</span>
-<span class="s">        [ sh:datatype core:DateTime ;</span>
+<span class="s">        [ sh:class core:Element ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;publishedTime&quot; ;</span>
-<span class="s">            sh:path security:publishedTime ],</span>
+<span class="s">            sh:name &quot;assessedElement&quot; ;</span>
+<span class="s">            sh:path security:assessedElement ],</span>
 <span class="s">        [ sh:class core:Agent ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;suppliedBy&quot; ;</span>
@@ -1089,10 +1089,10 @@ External property restriction on /Core/Relationship/to: minCount: 1</p>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;withdrawnTime&quot; ;</span>
 <span class="s">            sh:path security:withdrawnTime ],</span>
-<span class="s">        [ sh:class core:Element ;</span>
+<span class="s">        [ sh:datatype core:DateTime ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;assessedElement&quot; ;</span>
-<span class="s">            sh:path security:assessedElement ] .</span>
+<span class="s">            sh:name &quot;publishedTime&quot; ;</span>
+<span class="s">            sh:path security:publishedTime ] .</span>
 </pre></div>
 
             
@@ -1122,7 +1122,7 @@ External property restriction on /Core/Relationship/to: minCount: 1</p>
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Fri, 01 Sep 2023 22:05:07 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Tue, 12 Sep 2023 00:59:31 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>
@@ -1183,7 +1183,7 @@ $('#search-input-sidebar').keyup(function() {
 
     $(document).ready(function (){
       $('#sidebar-wrapper').animate({
-          scrollTop: $("#sd_339").offset().top - 100
+          scrollTop: $("#sd_361").offset().top - 100
       }, 100);
     });
 
