@@ -1073,8 +1073,12 @@ or otherwise) which is defined by an SPDX data creator (CustomLicenseAddition).<
 <span class="s">    ns0:term_status &quot;Stable&quot; ;</span>
 <span class="s">    sh:property [ sh:datatype xsd:string ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;obsoletedBy&quot; ;</span>
-<span class="s">            sh:path expandedlicensing:obsoletedBy ],</span>
+<span class="s">            sh:name &quot;standardAdditionTemplate&quot; ;</span>
+<span class="s">            sh:path expandedlicensing:standardAdditionTemplate ],</span>
+<span class="s">        [ sh:datatype xsd:string ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:name &quot;licenseXml&quot; ;</span>
+<span class="s">            sh:path expandedlicensing:licenseXml ],</span>
 <span class="s">        [ sh:datatype xsd:string ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:minCount 1 ;</span>
@@ -1082,12 +1086,8 @@ or otherwise) which is defined by an SPDX data creator (CustomLicenseAddition).<
 <span class="s">            sh:path expandedlicensing:additionText ],</span>
 <span class="s">        [ sh:datatype xsd:string ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;standardAdditionTemplate&quot; ;</span>
-<span class="s">            sh:path expandedlicensing:standardAdditionTemplate ],</span>
-<span class="s">        [ sh:datatype xsd:string ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;licenseXml&quot; ;</span>
-<span class="s">            sh:path expandedlicensing:licenseXml ],</span>
+<span class="s">            sh:name &quot;obsoletedBy&quot; ;</span>
+<span class="s">            sh:path expandedlicensing:obsoletedBy ],</span>
 <span class="s">        [ sh:datatype xsd:boolean ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;isDeprecatedAdditionId&quot; ;</span>
@@ -1121,7 +1121,7 @@ or otherwise) which is defined by an SPDX data creator (CustomLicenseAddition).<
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Thu, 21 Sep 2023 08:13:06 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Wed, 27 Sep 2023 18:33:46 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>
@@ -1182,7 +1182,7 @@ $('#search-input-sidebar').keyup(function() {
 
     $(document).ready(function (){
       $('#sidebar-wrapper').animate({
-          scrollTop: $("#sd_349").offset().top - 100
+          scrollTop: $("#sd_369").offset().top - 100
       }, 100);
     });
 
