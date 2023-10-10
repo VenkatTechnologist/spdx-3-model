@@ -616,7 +616,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
           
               <li class="second-level" style="line-height: 20px;" id="sd_116"><a   href="prop-coreprefix.html">core:prefix</a></li>
           
-              <li class="second-level" style="line-height: 20px;" id="sd_206"><a   href="prop-coreprofile.html">core:profile</a></li>
+              <li class="second-level" style="line-height: 20px;" id="sd_206"><a   href="prop-coreprofileconformance.html">core:profileConformance</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_207"><a   href="prop-corerelationshiptype.html">core:relationshipType</a></li>
           
@@ -936,7 +936,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
               <li>
               <a href="shape-coreelement.html" title="'Element' - An Element is a representation of a fundamental concept either directly inherent to the Bill of Materials (BOM) domain or..">core:Element</a>
                 <ul>
-                  <li><a style="font-weight: bold;" title="'ElementCollection' - An SpdxCollection is a collection of Elements, not necessarily with unifying context.">core:ElementCollection</a>
+                  <li><a style="font-weight: bold;" title="'ElementCollection' - An ElementCollection is a collection of Elements, not necessarily with unifying context. Note that all ElementCollections must conform to the..">core:ElementCollection</a>
                   
                     <ul>
                       
@@ -996,7 +996,10 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
               <h3 class="panel-title">Description</h3>
             </div>
             <div class="panel-body">
-              <p>An SpdxCollection is a collection of Elements, not necessarily with unifying context.</p>
+              <p>An ElementCollection is a collection of Elements, not necessarily with unifying context.</p>
+
+<p>Note that all ElementCollections must conform to the core profile even if the core profile is no specified in the profileConformance property.<br>
+If the profileConformance property is not provided, core is to be assumed as the default.</p>
             </div>
           </div>
         </div>
@@ -1053,20 +1056,26 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 
 <span class="nn">core</span><span class="p">:</span><span class="nt">ElementCollection</span> <span class="kt">a</span> <span class="nn">owl</span><span class="p">:</span><span class="nt">Class</span><span class="p">,</span>
         <span class="nn">sh</span><span class="p">:</span><span class="nt">NodeShape</span> <span class="p">;</span>
-    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">comment</span> <span class="s">&quot;An SpdxCollection is a collection of Elements, not necessarily with unifying context.&quot;</span> <span class="p">;</span>
-    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">subClassOf</span> <span class="nn">core</span><span class="p">:</span><span class="nt">Element</span> <span class="p">;</span>
-    <span class="nn">ns0</span><span class="p">:</span><span class="nt">term_status</span> <span class="s">&quot;Stable&quot;</span> <span class="p">;</span>
-    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span> <span class="nn">sh</span><span class="p">:</span><span class="nt">class</span> <span class="nn">core</span><span class="p">:</span><span class="nt">ExternalMap</span> <span class="p">;</span>
-            <span class="nn">sh</span><span class="p">:</span><span class="nt">name</span> <span class="s">&quot;imports&quot;</span> <span class="p">;</span>
-            <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">core</span><span class="p">:</span><span class="nt">imports</span> <span class="p">],</span>
-        <span class="p">[</span> <span class="nn">sh</span><span class="p">:</span><span class="nt">class</span> <span class="nn">core</span><span class="p">:</span><span class="nt">Element</span> <span class="p">;</span>
-            <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>
-            <span class="nn">sh</span><span class="p">:</span><span class="nt">name</span> <span class="s">&quot;rootElement&quot;</span> <span class="p">;</span>
-            <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">core</span><span class="p">:</span><span class="nt">rootElement</span> <span class="p">],</span>
-        <span class="p">[</span> <span class="nn">sh</span><span class="p">:</span><span class="nt">class</span> <span class="nn">core</span><span class="p">:</span><span class="nt">Element</span> <span class="p">;</span>
-            <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>
-            <span class="nn">sh</span><span class="p">:</span><span class="nt">name</span> <span class="s">&quot;element&quot;</span> <span class="p">;</span>
-            <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">core</span><span class="p">:</span><span class="nt">element</span> <span class="p">]</span> <span class="p">.</span>
+    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">comment</span> <span class="s">&quot;&quot;&quot;An ElementCollection is a collection of Elements, not necessarily with unifying context.</span>
+
+<span class="s">Note that all ElementCollections must conform to the core profile even if the core profile is no specified in the profileConformance property.</span>
+<span class="s">If the profileConformance property is not provided, core is to be assumed as the default.&quot;&quot;&quot; ;</span>
+<span class="s">    rdfs:subClassOf core:Element ;</span>
+<span class="s">    ns0:term_status &quot;Stable&quot; ;</span>
+<span class="s">    sh:property [ sh:class core:ProfileIdentifierType ;</span>
+<span class="s">            sh:name &quot;profileConformance&quot; ;</span>
+<span class="s">            sh:path core:profileConformance ],</span>
+<span class="s">        [ sh:class core:Element ;</span>
+<span class="s">            sh:minCount 1 ;</span>
+<span class="s">            sh:name &quot;rootElement&quot; ;</span>
+<span class="s">            sh:path core:rootElement ],</span>
+<span class="s">        [ sh:class core:ExternalMap ;</span>
+<span class="s">            sh:name &quot;imports&quot; ;</span>
+<span class="s">            sh:path core:imports ],</span>
+<span class="s">        [ sh:class core:Element ;</span>
+<span class="s">            sh:minCount 1 ;</span>
+<span class="s">            sh:name &quot;element&quot; ;</span>
+<span class="s">            sh:path core:element ] .</span>
 </pre></div>
 
             
@@ -1096,7 +1105,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Sat, 30 Sep 2023 17:12:57 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Tue, 10 Oct 2023 16:08:29 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>
@@ -1157,7 +1166,7 @@ $('#search-input-sidebar').keyup(function() {
 
     $(document).ready(function (){
       $('#sidebar-wrapper').animate({
-          scrollTop: $("#sd_319").offset().top - 100
+          scrollTop: $("#sd_313").offset().top - 100
       }, 100);
     });
 

@@ -616,7 +616,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
           
               <li class="second-level" style="line-height: 20px;" id="sd_116"><a   href="prop-coreprefix.html">core:prefix</a></li>
           
-              <li class="second-level" style="line-height: 20px;" id="sd_206"><a   href="prop-coreprofile.html">core:profile</a></li>
+              <li class="second-level" style="line-height: 20px;" id="sd_206"><a   href="prop-coreprofileconformance.html">core:profileConformance</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_207"><a   href="prop-corerelationshiptype.html">core:relationshipType</a></li>
           
@@ -1197,27 +1197,6 @@ the general reliability/accuracy of the analysis information.</span>
                         </td>
                       </tr>
                     
-                      <tr>
-                        <td class="firsttd">
-                          <a class="propcolor" title="core:profile" href="prop-coreprofile.html">core:profile</a>
-                        </td>
-                        <td class="secondtd">
-                          <i>owl:ObjectProperty<i>
-                        </td>
-                        <td class="thirdtd">
-                          <span>This field provides information about which profiles the Element belongs to.</span>
-                        </td>
-                        <td class="fourthtd">
-                          
-                            
-                                
-                                  <a title="core:ProfileIdentifierType" href="class-coreprofileidentifiertype.html" class="rdfclass">core:ProfileIdentifierType</a>
-                                
-                            
-                          
-                        </td>
-                      </tr>
-                    
                   
                 
               
@@ -1512,7 +1491,24 @@ where multiple, equivalent official translations exist.</span>
 
 <span class="s">The dateTime created is often the date of last change (e.g., a git commit date), not the date when the SPDX data was created, as doing so supports reproducible builds.&quot;&quot;&quot; ;</span>
 <span class="s">    ns0:term_status &quot;Stable&quot; ;</span>
-<span class="s">    sh:property [ sh:datatype core:SemVer ;</span>
+<span class="s">    sh:property [ sh:datatype xsd:string ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:minCount 1 ;</span>
+<span class="s">            sh:name &quot;dataLicense&quot; ;</span>
+<span class="s">            sh:path core:dataLicense ],</span>
+<span class="s">        [ sh:class core:Agent ;</span>
+<span class="s">            sh:minCount 1 ;</span>
+<span class="s">            sh:name &quot;createdBy&quot; ;</span>
+<span class="s">            sh:path core:createdBy ],</span>
+<span class="s">        [ sh:datatype core:DateTime ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:minCount 1 ;</span>
+<span class="s">            sh:name &quot;created&quot; ;</span>
+<span class="s">            sh:path core:created ],</span>
+<span class="s">        [ sh:class core:Tool ;</span>
+<span class="s">            sh:name &quot;createdUsing&quot; ;</span>
+<span class="s">            sh:path core:createdUsing ],</span>
+<span class="s">        [ sh:datatype core:SemVer ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:minCount 1 ;</span>
 <span class="s">            sh:name &quot;specVersion&quot; ;</span>
@@ -1520,28 +1516,7 @@ where multiple, equivalent official translations exist.</span>
 <span class="s">        [ sh:datatype xsd:string ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;comment&quot; ;</span>
-<span class="s">            sh:path core:comment ],</span>
-<span class="s">        [ sh:datatype core:DateTime ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:minCount 1 ;</span>
-<span class="s">            sh:name &quot;created&quot; ;</span>
-<span class="s">            sh:path core:created ],</span>
-<span class="s">        [ sh:class core:ProfileIdentifierType ;</span>
-<span class="s">            sh:minCount 1 ;</span>
-<span class="s">            sh:name &quot;profile&quot; ;</span>
-<span class="s">            sh:path core:profile ],</span>
-<span class="s">        [ sh:class core:Agent ;</span>
-<span class="s">            sh:minCount 1 ;</span>
-<span class="s">            sh:name &quot;createdBy&quot; ;</span>
-<span class="s">            sh:path core:createdBy ],</span>
-<span class="s">        [ sh:datatype xsd:string ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:minCount 1 ;</span>
-<span class="s">            sh:name &quot;dataLicense&quot; ;</span>
-<span class="s">            sh:path core:dataLicense ],</span>
-<span class="s">        [ sh:class core:Tool ;</span>
-<span class="s">            sh:name &quot;createdUsing&quot; ;</span>
-<span class="s">            sh:path core:createdUsing ] .</span>
+<span class="s">            sh:path core:comment ] .</span>
 </pre></div>
 
             
@@ -1571,7 +1546,7 @@ where multiple, equivalent official translations exist.</span>
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Sat, 30 Sep 2023 17:12:56 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Tue, 10 Oct 2023 16:08:28 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>
