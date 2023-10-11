@@ -996,13 +996,11 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
               <h3 class="panel-title">Description</h3>
             </div>
             <div class="panel-body">
-              <p>A CvssV2VulnAssessmentRelationship relationship describes the determined score and vector of a vulnerability using version 2.0 of the Common Vulnerability Scoring System<br>
-(CVSS) as defined on [https://www.first.org/cvss/v2/guide](https://www.first.org/cvss/v2/guide). It is intented to communicate the results of using a CVSS calculator.</p>
+              <p>A CvssV2VulnAssessmentRelationship relationship describes the determined score and vector of a vulnerability using version 2.0 of the Common Vulnerability Scoring System (CVSS) as defined at [https://www.first.org/cvss/v2/guide](https://www.first.org/cvss/v2/guide). It is intended to communicate the results of using a CVSS calculator.</p>
 
 <p>**Constraints**</p>
 
-<p>- The value of severity must be one of &#39;low&#39;, &#39;medium&#39; or &#39;high&#39;<br>
-- The relationship type must be set to hasAssessmentFor.</p>
+<p>- The relationship type must be set to `hasAssessmentFor`.</p>
 
 <p>**Syntax**</p>
 
@@ -1012,8 +1010,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
   &#34;@id&#34;: &#34;urn:spdx.dev:cvssv2-cve-2020-28498&#34;,<br>
   &#34;relationshipType&#34;: &#34;hasAssessmentFor&#34;,<br>
   &#34;score&#34;: 4.3,<br>
-  &#34;vector&#34;: &#34;(AV:N/AC:M/Au:N/C:P/I:N/A:N)&#34;,<br>
-  &#34;severity&#34;: &#34;low&#34;,<br>
+  &#34;vectorString&#34;: &#34;(AV:N/AC:M/Au:N/C:P/I:N/A:N)&#34;,<br>
   &#34;from&#34;: &#34;urn:spdx.dev:vuln-cve-2020-28498&#34;,<br>
   &#34;to&#34;: [&#34;urn:product-acme-application-1.3&#34;],<br>
   &#34;assessedElement&#34;: &#34;urn:npm-elliptic-6.5.2&#34;,<br>
@@ -1106,13 +1103,11 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 
 <span class="nn">security</span><span class="p">:</span><span class="nt">CvssV2VulnAssessmentRelationship</span> <span class="kt">a</span> <span class="nn">owl</span><span class="p">:</span><span class="nt">Class</span><span class="p">,</span>
         <span class="nn">sh</span><span class="p">:</span><span class="nt">NodeShape</span> <span class="p">;</span>
-    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">comment</span> <span class="s">&quot;&quot;&quot;A CvssV2VulnAssessmentRelationship relationship describes the determined score and vector of a vulnerability using version 2.0 of the Common Vulnerability Scoring System</span>
-<span class="s">(CVSS) as defined on [https://www.first.org/cvss/v2/guide](https://www.first.org/cvss/v2/guide). It is intented to communicate the results of using a CVSS calculator.</span>
+    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">comment</span> <span class="s">&quot;&quot;&quot;A CvssV2VulnAssessmentRelationship relationship describes the determined score and vector of a vulnerability using version 2.0 of the Common Vulnerability Scoring System (CVSS) as defined at [https://www.first.org/cvss/v2/guide](https://www.first.org/cvss/v2/guide). It is intended to communicate the results of using a CVSS calculator.</span>
 
 <span class="s">**Constraints**</span>
 
-<span class="s">- The value of severity must be one of &#39;low&#39;, &#39;medium&#39; or &#39;high&#39;</span>
-<span class="s">- The relationship type must be set to hasAssessmentFor.</span>
+<span class="s">- The relationship type must be set to `hasAssessmentFor`.</span>
 
 <span class="s">**Syntax**</span>
 
@@ -1122,8 +1117,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="s">  &quot;@id&quot;: &quot;urn:spdx.dev:cvssv2-cve-2020-28498&quot;,</span>
 <span class="s">  &quot;relationshipType&quot;: &quot;hasAssessmentFor&quot;,</span>
 <span class="s">  &quot;score&quot;: 4.3,</span>
-<span class="s">  &quot;vector&quot;: &quot;(AV:N/AC:M/Au:N/C:P/I:N/A:N)&quot;,</span>
-<span class="s">  &quot;severity&quot;: &quot;low&quot;,</span>
+<span class="s">  &quot;vectorString&quot;: &quot;(AV:N/AC:M/Au:N/C:P/I:N/A:N)&quot;,</span>
 <span class="s">  &quot;from&quot;: &quot;urn:spdx.dev:vuln-cve-2020-28498&quot;,</span>
 <span class="s">  &quot;to&quot;: [&quot;urn:product-acme-application-1.3&quot;],</span>
 <span class="s">  &quot;assessedElement&quot;: &quot;urn:npm-elliptic-6.5.2&quot;,</span>
@@ -1160,12 +1154,9 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="s">    ns0:term_status &quot;Stable&quot; ;</span>
 <span class="s">    sh:property [ sh:datatype xsd:string ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;vector&quot; ;</span>
-<span class="s">            sh:path security:vector ],</span>
-<span class="s">        [ sh:datatype xsd:string ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;severity&quot; ;</span>
-<span class="s">            sh:path security:severity ],</span>
+<span class="s">            sh:minCount 1 ;</span>
+<span class="s">            sh:name &quot;vectorString&quot; ;</span>
+<span class="s">            sh:path security:vectorString ],</span>
 <span class="s">        [ sh:datatype xsd:decimal ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:minCount 1 ;</span>
@@ -1200,7 +1191,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Wed, 11 Oct 2023 18:37:11 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Wed, 11 Oct 2023 19:00:06 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>
@@ -1261,7 +1252,7 @@ $('#search-input-sidebar').keyup(function() {
 
     $(document).ready(function (){
       $('#sidebar-wrapper').animate({
-          scrollTop: $("#sd_358").offset().top - 100
+          scrollTop: $("#sd_337").offset().top - 100
       }, 100);
     });
 
