@@ -1038,6 +1038,11 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                          
                               <a href="class-securitycvssv4vulnassessmentrelationship.html" title="https://spdx.org/rdf/v3/Security/CvssV4VulnAssessmentRelationship">security:CvssV4VulnAssessmentRelationship</a>
                            
+                           , 
+                         
+                         
+                              <a href="class-securitycvssv3vulnassessmentrelationship.html" title="https://spdx.org/rdf/v3/Security/CvssV3VulnAssessmentRelationship">security:CvssV3VulnAssessmentRelationship</a>
+                           
                            
                          
                      
@@ -1075,8 +1080,10 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 
                     <div class="highlight"><pre><span></span><span class="k">@prefix</span><span class="w"> </span><span class="nn">ns0:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2003/06/sw-vocab-status/ns#&gt;</span><span class="w"> </span><span class="p">.</span>
 <span class="k">@prefix</span><span class="w"> </span><span class="nn">owl:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2002/07/owl#&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">rdf:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;</span><span class="w"> </span><span class="p">.</span>
 <span class="k">@prefix</span><span class="w"> </span><span class="nn">rdfs:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span><span class="w"> </span><span class="p">.</span>
 <span class="k">@prefix</span><span class="w"> </span><span class="nn">security:</span><span class="w"> </span><span class="nv">&lt;https://spdx.org/rdf/v3/Security/&gt;</span><span class="w"> </span><span class="p">.</span>
+<span class="k">@prefix</span><span class="w"> </span><span class="nn">sh:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/ns/shacl#&gt;</span><span class="w"> </span><span class="p">.</span>
 <span class="k">@prefix</span><span class="w"> </span><span class="nn">xsd:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span><span class="w"> </span><span class="p">.</span>
 
 <span class="nn">security</span><span class="p">:</span><span class="nt">vectorString</span> <span class="kt">a</span> <span class="nn">owl</span><span class="p">:</span><span class="nt">DatatypeProperty</span> <span class="p">;</span>
@@ -1085,9 +1092,10 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="s">**Constraints**</span>
 
 <span class="s">String values for the vectorString range must only include the abbreviated form of metric names specified in CVSS specifications, e.g. [https://www.first.org/cvss/v4.0/specification-document#Vector-String](https://www.first.org/cvss/v4.0/specification-document#Vector-String)&quot;&quot;&quot; ;</span>
-<span class="s">    rdfs:domain security:CvssV4VulnAssessmentRelationship ;</span>
 <span class="s">    rdfs:range xsd:string ;</span>
-<span class="s">    ns0:term_status &quot;Stable&quot; .</span>
+<span class="s">    ns0:term_status &quot;Stable&quot; ;</span>
+<span class="s">    sh:or ( [ rdfs:domain security:CvssV3VulnAssessmentRelationship,</span>
+<span class="s">                    security:CvssV4VulnAssessmentRelationship ] ) .</span>
 </pre></div>
 
 
@@ -1126,7 +1134,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Wed, 11 Oct 2023 18:27:27 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Wed, 11 Oct 2023 18:37:10 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>
