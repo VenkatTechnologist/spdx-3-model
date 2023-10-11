@@ -752,7 +752,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
           
               <li class="second-level" style="line-height: 20px;" id="sd_224"><a   href="prop-securitysuppliedby.html">security:suppliedBy</a></li>
           
-              <li class="second-level" style="line-height: 20px;" id="sd_166"><a   href="prop-securityvector.html">security:vector</a></li>
+              <li class="second-level" style="line-height: 20px;" id="sd_166"><a   href="prop-securityvectorstring.html">security:vectorString</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_167"><a   href="prop-securityvexversion.html">security:vexVersion</a></li>
           
@@ -1390,6 +1390,31 @@ where multiple, equivalent official translations exist.</span>
                         </td>
                       </tr>
                     
+                      <tr>
+                        <td class="firsttd">
+                          <a class="propcolor" title="security:vectorString" href="prop-securityvectorstring.html">security:vectorString</a>
+                        </td>
+                        <td class="secondtd">
+                          <i>owl:DatatypeProperty<i>
+                        </td>
+                        <td class="thirdtd">
+                          <span>Specifies any combination of the CVSS Base, Temporal, Threat, Environmental, and/or Supplemental vector string values for a vulnerability. Supports vectorStrings specified in all CVSS versions.
+
+**Constraints**
+
+String values for the vectorString range must only include the abbreviated form of metric names specified in CVSS specifications, e.g. [https://www.first.org/cvss/v4.0/specification-document#Vector-String](https://www.first.org/cvss/v4.0/specification-document#Vector-String)</span>
+                        </td>
+                        <td class="fourthtd">
+                          
+                            
+                                
+                                  <i>xsd:string</i>
+                                
+                            
+                          
+                        </td>
+                      </tr>
+                    
                   
                 
               
@@ -1430,16 +1455,16 @@ where multiple, equivalent official translations exist.</span>
 <span class="s">This is commonly used for integrity checking of data.&quot;&quot;&quot; ;</span>
 <span class="s">    rdfs:subClassOf core:IntegrityMethod ;</span>
 <span class="s">    ns0:term_status &quot;Stable&quot; ;</span>
-<span class="s">    sh:property [ sh:class core:HashAlgorithm ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:minCount 1 ;</span>
-<span class="s">            sh:name &quot;algorithm&quot; ;</span>
-<span class="s">            sh:path core:algorithm ],</span>
-<span class="s">        [ sh:datatype xsd:string ;</span>
+<span class="s">    sh:property [ sh:datatype xsd:string ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:minCount 1 ;</span>
 <span class="s">            sh:name &quot;hashValue&quot; ;</span>
-<span class="s">            sh:path core:hashValue ] .</span>
+<span class="s">            sh:path core:hashValue ],</span>
+<span class="s">        [ sh:class core:HashAlgorithm ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:minCount 1 ;</span>
+<span class="s">            sh:name &quot;algorithm&quot; ;</span>
+<span class="s">            sh:path core:algorithm ] .</span>
 </pre></div>
 
             
@@ -1469,7 +1494,7 @@ where multiple, equivalent official translations exist.</span>
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Tue, 10 Oct 2023 16:08:28 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Wed, 11 Oct 2023 18:25:55 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>
