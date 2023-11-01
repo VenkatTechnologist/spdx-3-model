@@ -1074,29 +1074,16 @@ at https://spdx.org/licenses.">expandedlicensing:ListedLicense</a></li>
 <span class="s">    ns0:term_status &quot;Stable&quot; ;</span>
 <span class="s">    sh:property [ sh:datatype xsd:string ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:minCount 1 ;</span>
-<span class="s">            sh:name &quot;/SimpleLicensing/licenseText&quot; ;</span>
-<span class="s">            sh:path simplelicensing:licenseText ],</span>
+<span class="s">            sh:name &quot;standardLicenseHeader&quot; ;</span>
+<span class="s">            sh:path expandedlicensing:standardLicenseHeader ],</span>
 <span class="s">        [ sh:datatype xsd:string ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;obsoletedBy&quot; ;</span>
 <span class="s">            sh:path expandedlicensing:obsoletedBy ],</span>
 <span class="s">        [ sh:datatype xsd:boolean ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;isFsfLibre&quot; ;</span>
-<span class="s">            sh:path expandedlicensing:isFsfLibre ],</span>
-<span class="s">        [ sh:datatype xsd:string ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;standardLicenseTemplate&quot; ;</span>
-<span class="s">            sh:path expandedlicensing:standardLicenseTemplate ],</span>
-<span class="s">        [ sh:datatype xsd:boolean ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;isDeprecatedLicenseId&quot; ;</span>
 <span class="s">            sh:path expandedlicensing:isDeprecatedLicenseId ],</span>
-<span class="s">        [ sh:datatype xsd:string ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;standardLicenseHeader&quot; ;</span>
-<span class="s">            sh:path expandedlicensing:standardLicenseHeader ],</span>
 <span class="s">        [ sh:datatype xsd:string ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;licenseXml&quot; ;</span>
@@ -1104,7 +1091,20 @@ at https://spdx.org/licenses.">expandedlicensing:ListedLicense</a></li>
 <span class="s">        [ sh:datatype xsd:boolean ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;isOsiApproved&quot; ;</span>
-<span class="s">            sh:path expandedlicensing:isOsiApproved ] .</span>
+<span class="s">            sh:path expandedlicensing:isOsiApproved ],</span>
+<span class="s">        [ sh:datatype xsd:string ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:minCount 1 ;</span>
+<span class="s">            sh:name &quot;/SimpleLicensing/licenseText&quot; ;</span>
+<span class="s">            sh:path simplelicensing:licenseText ],</span>
+<span class="s">        [ sh:datatype xsd:boolean ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:name &quot;isFsfLibre&quot; ;</span>
+<span class="s">            sh:path expandedlicensing:isFsfLibre ],</span>
+<span class="s">        [ sh:datatype xsd:string ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:name &quot;standardLicenseTemplate&quot; ;</span>
+<span class="s">            sh:path expandedlicensing:standardLicenseTemplate ] .</span>
 </pre></div>
 
             
@@ -1134,7 +1134,7 @@ at https://spdx.org/licenses.">expandedlicensing:ListedLicense</a></li>
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Fri, 27 Oct 2023 08:09:10 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Wed, 01 Nov 2023 08:03:02 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>
@@ -1195,7 +1195,7 @@ $('#search-input-sidebar').keyup(function() {
 
     $(document).ready(function (){
       $('#sidebar-wrapper').animate({
-          scrollTop: $("#sd_337").offset().top - 100
+          scrollTop: $("#sd_316").offset().top - 100
       }, 100);
     });
 
