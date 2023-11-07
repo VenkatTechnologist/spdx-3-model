@@ -1141,7 +1141,8 @@ The profileConformance has a default value of core if no other profileConformanc
                           <i>owl:ObjectProperty<i>
                         </td>
                         <td class="thirdtd">
-                          <span>A rootElement of a collection is the top level Element from which all other Elements are reached via relationships.</span>
+                          <span>This property is used to denote the root Element(s) of a tree of elements contained in an SBOM.
+The tree consists of other elements directly and indirectly related through properties or Relationships from the root.</span>
                         </td>
                         <td class="fourthtd">
                           
@@ -1641,16 +1642,16 @@ where multiple, equivalent official translations exist.</span>
 <span class="s">            sh:minCount 1 ;</span>
 <span class="s">            sh:name &quot;rootElement&quot; ;</span>
 <span class="s">            sh:path core:rootElement ],</span>
-<span class="s">        [ sh:class core:ProfileIdentifierType ;</span>
-<span class="s">            sh:name &quot;profileConformance&quot; ;</span>
-<span class="s">            sh:path core:profileConformance ],</span>
-<span class="s">        [ sh:class core:ExternalMap ;</span>
-<span class="s">            sh:name &quot;imports&quot; ;</span>
-<span class="s">            sh:path core:imports ],</span>
 <span class="s">        [ sh:class core:Element ;</span>
 <span class="s">            sh:minCount 1 ;</span>
 <span class="s">            sh:name &quot;element&quot; ;</span>
-<span class="s">            sh:path core:element ] .</span>
+<span class="s">            sh:path core:element ],</span>
+<span class="s">        [ sh:class core:ExternalMap ;</span>
+<span class="s">            sh:name &quot;imports&quot; ;</span>
+<span class="s">            sh:path core:imports ],</span>
+<span class="s">        [ sh:class core:ProfileIdentifierType ;</span>
+<span class="s">            sh:name &quot;profileConformance&quot; ;</span>
+<span class="s">            sh:path core:profileConformance ] .</span>
 </pre></div>
 
             
@@ -1680,7 +1681,7 @@ where multiple, equivalent official translations exist.</span>
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Tue, 07 Nov 2023 17:47:36 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Tue, 07 Nov 2023 17:50:41 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>

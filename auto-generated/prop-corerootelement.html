@@ -949,7 +949,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <li><a href="entities-tree-properties.html">rdf:Property</a>
 
                           <ul>
-                            <li><a style="font-weight: bold;" title="'rootElement' - A rootElement of a collection is the top level Element from which all other Elements are reached via relationships.">core:rootElement</a>
+                            <li><a style="font-weight: bold;" title="'rootElement' - This property is used to denote the root Element(s) of a tree of elements contained in an SBOM. The tree..">core:rootElement</a>
 
                             
                               </li>
@@ -1003,7 +1003,8 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
             </div>
             <div class="panel-body">
 
-                <p>A rootElement of a collection is the top level Element from which all other Elements are reached via relationships.</p>
+                <p>This property is used to denote the root Element(s) of a tree of elements contained in an SBOM.<br>
+The tree consists of other elements directly and indirectly related through properties or Relationships from the root.</p>
             </div>
           </div>
            </div></div>
@@ -1077,10 +1078,11 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="k">@prefix</span><span class="w"> </span><span class="nn">rdfs:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span><span class="w"> </span><span class="p">.</span>
 
 <span class="nn">core</span><span class="p">:</span><span class="nt">rootElement</span> <span class="kt">a</span> <span class="nn">owl</span><span class="p">:</span><span class="nt">ObjectProperty</span> <span class="p">;</span>
-    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">comment</span> <span class="s">&quot;A rootElement of a collection is the top level Element from which all other Elements are reached via relationships.&quot;</span> <span class="p">;</span>
-    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">domain</span> <span class="nn">core</span><span class="p">:</span><span class="nt">ElementCollection</span> <span class="p">;</span>
-    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">range</span> <span class="nn">core</span><span class="p">:</span><span class="nt">Element</span> <span class="p">;</span>
-    <span class="nn">ns0</span><span class="p">:</span><span class="nt">term_status</span> <span class="s">&quot;Stable&quot;</span> <span class="p">.</span>
+    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">comment</span> <span class="s">&quot;&quot;&quot;This property is used to denote the root Element(s) of a tree of elements contained in an SBOM.</span>
+<span class="s">The tree consists of other elements directly and indirectly related through properties or Relationships from the root.&quot;&quot;&quot; ;</span>
+<span class="s">    rdfs:domain core:ElementCollection ;</span>
+<span class="s">    rdfs:range core:Element ;</span>
+<span class="s">    ns0:term_status &quot;Stable&quot; .</span>
 </pre></div>
 
 
@@ -1119,7 +1121,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Tue, 07 Nov 2023 17:47:37 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Tue, 07 Nov 2023 17:50:41 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>
