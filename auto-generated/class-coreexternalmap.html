@@ -586,8 +586,6 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
           
               <li class="second-level" style="line-height: 20px;" id="sd_107"><a   href="prop-coreendtime.html">core:endTime</a></li>
           
-              <li class="second-level" style="line-height: 20px;" id="sd_108"><a   href="prop-coreexternalid.html">core:externalId</a></li>
-          
               <li class="second-level" style="line-height: 20px;" id="sd_202"><a   href="prop-coreexternalidentifier.html">core:externalIdentifier</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_203"><a   href="prop-coreexternalidentifiertype.html">core:externalIdentifierType</a></li>
@@ -595,6 +593,8 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
               <li class="second-level" style="line-height: 20px;" id="sd_204"><a   href="prop-coreexternalref.html">core:externalRef</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_205"><a   href="prop-coreexternalreftype.html">core:externalRefType</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_108"><a   href="prop-coreexternalspdxid.html">core:externalSpdxId</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_206"><a   href="prop-corefrom.html">core:from</a></li>
           
@@ -1043,13 +1043,13 @@ such as its provenance, where to retrieve it, and how to verify its integrity.</
                     
                       <tr>
                         <td class="firsttd">
-                          <a class="propcolor" title="core:externalId" href="prop-coreexternalid.html">core:externalId</a>
+                          <a class="propcolor" title="core:externalSpdxId" href="prop-coreexternalspdxid.html">core:externalSpdxId</a>
                         </td>
                         <td class="secondtd">
                           <i>owl:DatatypeProperty<i>
                         </td>
                         <td class="thirdtd">
-                          <span>ExternalId identifies an external Element used within a Document but defined external to that Document.</span>
+                          <span>ExternalSpdxId identifies an external Element used within a Document but defined external to that Document.</span>
                         </td>
                         <td class="fourthtd">
                           
@@ -1425,15 +1425,15 @@ where multiple, equivalent official translations exist.</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;locationHint&quot; ;</span>
 <span class="s">            sh:path core:locationHint ],</span>
-<span class="s">        [ sh:datatype xsd:anyURI ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:minCount 1 ;</span>
-<span class="s">            sh:name &quot;externalId&quot; ;</span>
-<span class="s">            sh:path core:externalId ],</span>
 <span class="s">        [ sh:class core:Artifact ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;definingDocument&quot; ;</span>
 <span class="s">            sh:path core:definingDocument ],</span>
+<span class="s">        [ sh:datatype xsd:anyURI ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:minCount 1 ;</span>
+<span class="s">            sh:name &quot;externalSpdxId&quot; ;</span>
+<span class="s">            sh:path core:externalSpdxId ],</span>
 <span class="s">        [ sh:class core:IntegrityMethod ;</span>
 <span class="s">            sh:name &quot;verifiedUsing&quot; ;</span>
 <span class="s">            sh:path core:verifiedUsing ] .</span>
@@ -1466,7 +1466,7 @@ where multiple, equivalent official translations exist.</span>
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Tue, 07 Nov 2023 18:28:53 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Tue, 14 Nov 2023 12:09:08 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>

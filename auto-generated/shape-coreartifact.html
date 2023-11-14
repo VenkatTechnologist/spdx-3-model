@@ -586,8 +586,6 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
           
               <li class="second-level" style="line-height: 20px;" id="sd_107"><a   href="prop-coreendtime.html">core:endTime</a></li>
           
-              <li class="second-level" style="line-height: 20px;" id="sd_108"><a   href="prop-coreexternalid.html">core:externalId</a></li>
-          
               <li class="second-level" style="line-height: 20px;" id="sd_202"><a   href="prop-coreexternalidentifier.html">core:externalIdentifier</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_203"><a   href="prop-coreexternalidentifiertype.html">core:externalIdentifierType</a></li>
@@ -595,6 +593,8 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
               <li class="second-level" style="line-height: 20px;" id="sd_204"><a   href="prop-coreexternalref.html">core:externalRef</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_205"><a   href="prop-coreexternalreftype.html">core:externalRefType</a></li>
+          
+              <li class="second-level" style="line-height: 20px;" id="sd_108"><a   href="prop-coreexternalspdxid.html">core:externalSpdxId</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_206"><a   href="prop-corefrom.html">core:from</a></li>
           
@@ -1071,13 +1071,6 @@ such as an electronic file, a software package, a device or an element of data.<
 <span class="s">            sh:path core:standard ],</span>
 <span class="s">        [ sh:datatype core:DateTime ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;builtTime&quot; ;</span>
-<span class="s">            sh:path core:builtTime ],</span>
-<span class="s">        [ sh:class core:Agent ;</span>
-<span class="s">            sh:name &quot;originatedBy&quot; ;</span>
-<span class="s">            sh:path core:originatedBy ],</span>
-<span class="s">        [ sh:datatype core:DateTime ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;validUntilTime&quot; ;</span>
 <span class="s">            sh:path core:validUntilTime ],</span>
 <span class="s">        [ sh:datatype core:DateTime ;</span>
@@ -1087,7 +1080,14 @@ such as an electronic file, a software package, a device or an element of data.<
 <span class="s">        [ sh:class core:Agent ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;suppliedBy&quot; ;</span>
-<span class="s">            sh:path core:suppliedBy ] .</span>
+<span class="s">            sh:path core:suppliedBy ],</span>
+<span class="s">        [ sh:datatype core:DateTime ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:name &quot;builtTime&quot; ;</span>
+<span class="s">            sh:path core:builtTime ],</span>
+<span class="s">        [ sh:class core:Agent ;</span>
+<span class="s">            sh:name &quot;originatedBy&quot; ;</span>
+<span class="s">            sh:path core:originatedBy ] .</span>
 </pre></div>
 
             
@@ -1117,7 +1117,7 @@ such as an electronic file, a software package, a device or an element of data.<
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Tue, 07 Nov 2023 18:28:54 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Tue, 14 Nov 2023 12:09:09 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>
@@ -1178,7 +1178,7 @@ $('#search-input-sidebar').keyup(function() {
 
     $(document).ready(function (){
       $('#sidebar-wrapper').animate({
-          scrollTop: $("#sd_326").offset().top - 100
+          scrollTop: $("#sd_328").offset().top - 100
       }, 100);
     });
 
