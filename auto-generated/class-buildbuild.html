@@ -1000,12 +1000,11 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
               <p>A build is a representation of the process in which a piece of software or artifact is built. It encapsulates information related to a build process and<br>
 provides an element from which relationships can be created to describe the build&#39;s inputs, outputs, and related entities (e.g. builders, identities, etc.).</p>
 
-<p>Definitions of &#34;BuildType&#34;, &#34;ConfigSource&#34;, &#34;Parameters&#34; and &#34;Environment&#34; follow<br>
-those defined in [SLSA provenance](https://slsa.dev/provenance/v0.2).</p>
+<p>Definitions of &#34;buildType&#34;, &#34;configSourceEntrypoint&#34;, &#34;configSourceUri&#34;, &#34;parameters&#34; and &#34;environment&#34; follow those defined in [SLSA provenance](https://slsa.dev/provenance/v0.2).</p>
 
 <p>ExternalIdentifier of type &#34;urlScheme&#34; may be used to identify build logs. In this case, the comment of the ExternalIdentifier should be &#34;LogReference&#34;.</p>
 
-<p>Note that buildStart and buildEnd are optional, and may be omitted to simplify creating reproducible builds.</p>
+<p>Note that buildStartTime and buildEndTime are optional, and may be omitted to simplify creating reproducible builds.</p>
             </div>
           </div>
         </div>
@@ -1753,21 +1752,25 @@ where multiple, equivalent official translations exist.</span>
     <span class="nn">rdfs</span><span class="p">:</span><span class="nt">comment</span> <span class="s">&quot;&quot;&quot;A build is a representation of the process in which a piece of software or artifact is built. It encapsulates information related to a build process and</span>
 <span class="s">provides an element from which relationships can be created to describe the build&#39;s inputs, outputs, and related entities (e.g. builders, identities, etc.).</span>
 
-<span class="s">Definitions of &quot;BuildType&quot;, &quot;ConfigSource&quot;, &quot;Parameters&quot; and &quot;Environment&quot; follow</span>
-<span class="s">those defined in [SLSA provenance](https://slsa.dev/provenance/v0.2).</span>
+<span class="s">Definitions of &quot;buildType&quot;, &quot;configSourceEntrypoint&quot;, &quot;configSourceUri&quot;, &quot;parameters&quot; and &quot;environment&quot; follow those defined in [SLSA provenance](https://slsa.dev/provenance/v0.2).</span>
 
 <span class="s">ExternalIdentifier of type &quot;urlScheme&quot; may be used to identify build logs. In this case, the comment of the ExternalIdentifier should be &quot;LogReference&quot;.</span>
 
-<span class="s">Note that buildStart and buildEnd are optional, and may be omitted to simplify creating reproducible builds.&quot;&quot;&quot; ;</span>
+<span class="s">Note that buildStartTime and buildEndTime are optional, and may be omitted to simplify creating reproducible builds.&quot;&quot;&quot; ;</span>
 <span class="s">    rdfs:subClassOf core:Element ;</span>
 <span class="s">    ns0:term_status &quot;Stable&quot; ;</span>
-<span class="s">    sh:property [ sh:datatype xsd:anyURI ;</span>
-<span class="s">            sh:name &quot;configSourceUri&quot; ;</span>
-<span class="s">            sh:path build:configSourceUri ],</span>
-<span class="s">        [ sh:datatype core:DateTime ;</span>
+<span class="s">    sh:property [ sh:datatype core:DateTime ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;buildEndTime&quot; ;</span>
 <span class="s">            sh:path build:buildEndTime ],</span>
+<span class="s">        [ sh:datatype xsd:string ;</span>
+<span class="s">            sh:name &quot;configSourceEntrypoint&quot; ;</span>
+<span class="s">            sh:path build:configSourceEntrypoint ],</span>
+<span class="s">        [ sh:datatype xsd:anyURI ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:minCount 1 ;</span>
+<span class="s">            sh:name &quot;buildType&quot; ;</span>
+<span class="s">            sh:path build:buildType ],</span>
 <span class="s">        [ sh:class core:DictionaryEntry ;</span>
 <span class="s">            sh:name &quot;environment&quot; ;</span>
 <span class="s">            sh:path build:environment ],</span>
@@ -1781,18 +1784,13 @@ where multiple, equivalent official translations exist.</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;buildId&quot; ;</span>
 <span class="s">            sh:path build:buildId ],</span>
-<span class="s">        [ sh:datatype xsd:anyURI ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:minCount 1 ;</span>
-<span class="s">            sh:name &quot;buildType&quot; ;</span>
-<span class="s">            sh:path build:buildType ],</span>
-<span class="s">        [ sh:datatype xsd:string ;</span>
-<span class="s">            sh:name &quot;configSourceEntrypoint&quot; ;</span>
-<span class="s">            sh:path build:configSourceEntrypoint ],</span>
 <span class="s">        [ sh:datatype core:DateTime ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;buildStartTime&quot; ;</span>
-<span class="s">            sh:path build:buildStartTime ] .</span>
+<span class="s">            sh:path build:buildStartTime ],</span>
+<span class="s">        [ sh:datatype xsd:anyURI ;</span>
+<span class="s">            sh:name &quot;configSourceUri&quot; ;</span>
+<span class="s">            sh:path build:configSourceUri ] .</span>
 </pre></div>
 
             
@@ -1822,7 +1820,7 @@ where multiple, equivalent official translations exist.</span>
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Tue, 28 Nov 2023 17:56:23 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Tue, 28 Nov 2023 18:29:01 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>
