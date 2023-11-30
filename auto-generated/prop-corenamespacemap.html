@@ -617,7 +617,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
           
               <li class="second-level" style="line-height: 20px;" id="sd_118"><a   href="prop-corenamespace.html">core:namespace</a></li>
           
-              <li class="second-level" style="line-height: 20px;" id="sd_210"><a   href="prop-corenamespacemap.html">core:namespaceMap</a></li>
+              <li class="second-level" style="line-height: 20px;" id="sd_210"><a class="active"  href="prop-corenamespacemap.html">core:namespaceMap</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_211"><a   href="prop-coreoriginatedby.html">core:originatedBy</a></li>
           
@@ -691,7 +691,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
           
               <li class="second-level" style="line-height: 20px;" id="sd_142"><a   href="prop-expandedlicensingdeprecatedversion.html">expandedlicensing:deprecatedVersion</a></li>
           
-              <li class="second-level" style="line-height: 20px;" id="sd_143"><a class="active"  href="prop-expandedlicensingisdeprecatedadditionid.html">expandedlicensing:isDeprecatedAdditionId</a></li>
+              <li class="second-level" style="line-height: 20px;" id="sd_143"><a   href="prop-expandedlicensingisdeprecatedadditionid.html">expandedlicensing:isDeprecatedAdditionId</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_144"><a   href="prop-expandedlicensingisdeprecatedlicenseid.html">expandedlicensing:isDeprecatedLicenseId</a></li>
           
@@ -912,7 +912,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
           <a href="entities-tree-properties.html">Properties</a>
     </li>
       <li class="active">
-            expandedlicensing:isDeprecatedAdditionId
+            core:namespaceMap
         </li>
   </ol>
 
@@ -936,7 +936,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 
             <h1>
 
-                expandedlicensing:isDeprecatedAdditionId
+                core:namespaceMap
                 
                     <small class="label label-info label-xs ">leaf node</small>
                   
@@ -955,7 +955,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <li><a href="entities-tree-properties.html">rdf:Property</a>
 
                           <ul>
-                            <li><a style="font-weight: bold;" title="'isDeprecatedAdditionId' - The isDeprecatedAdditionId property specifies whether an identifier for a LicenseAddition has been marked as deprecated. If the property is not..">expandedlicensing:isDeprecatedAdditionId</a>
+                            <li><a style="font-weight: bold;" title="'namespaceMap' - This field provides a NamespaceMap of prefixes and associated namespace partial URIs applicable to an SpdxDocument and independent of any..">core:namespaceMap</a>
 
                             
                               </li>
@@ -979,7 +979,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
              </div>
              <div class="panel-body">
 
-                 <code>https://spdx.org/rdf/v3/ExpandedLicensing/isDeprecatedAdditionId</code>
+                 <code>https://spdx.org/rdf/v3/Core/namespaceMap</code>
              </div>
            </div>
             </div></div>
@@ -994,7 +994,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
              </div>
              <div class="panel-body">
 
-                 isDeprecatedAdditionId
+                 namespaceMap
              </div>
            </div>
             </div></div>
@@ -1009,21 +1009,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
             </div>
             <div class="panel-body">
 
-                <p>The isDeprecatedAdditionId property specifies whether an identifier for a<br>
-LicenseAddition has been marked as deprecated. If the property is not defined,<br>
-then it is presumed to be false (i.e., not deprecated).</p>
-
-<p>If the LicenseAddition is included on the SPDX Exceptions List, then<br>
-the `deprecatedVersion` property indicates on which version release of the<br>
-Exceptions List it was first marked as deprecated.</p>
-
-<p>&#34;Deprecated&#34; in this context refers to deprecating the use of the<br>
-_identifier_, not the underlying license addition. In other words, even if a<br>
-LicenseAddition&#39;s author or steward has stated that a particular<br>
-LicenseAddition generally should not be used, that would _not_ mean that the<br>
-LicenseAddition&#39;s identifier is &#34;deprecated.&#34; Rather, a LicenseAddition<br>
-operator is typically marked as &#34;deprecated&#34; when it is determined that use of<br>
-another identifier is preferable.</p>
+                <p>This field provides a NamespaceMap of prefixes and associated namespace partial URIs applicable to an SpdxDocument and independent of any specific serialization format or instance.</p>
             </div>
           </div>
            </div></div>
@@ -1054,7 +1040,7 @@ another identifier is preferable.</p>
                      
                          
                          
-                              <a href="class-expandedlicensinglicenseaddition.html" title="https://spdx.org/rdf/v3/ExpandedLicensing/LicenseAddition">expandedlicensing:LicenseAddition</a>
+                              <a href="class-corespdxdocument.html" title="https://spdx.org/rdf/v3/Core/SpdxDocument">core:SpdxDocument</a>
                            
                            
                          
@@ -1062,15 +1048,15 @@ another identifier is preferable.</p>
                    </td>
 
                     <td>
-                      expandedlicensing:isDeprecatedAdditionId
+                      core:namespaceMap
                     </td>
 
                     <td>
                       
                           
                           
-                               <a href="http://www.w3.org/2001/XMLSchema#boolean" target="_blank" title="http://www.w3.org/2001/XMLSchema#boolean">xsd:boolean</a>
-                             
+                               <a href="class-corenamespacemap.html" title="https://spdx.org/rdf/v3/Core/NamespaceMap">core:NamespaceMap</a>
+                            
                             
                           
                       
@@ -1091,31 +1077,16 @@ another identifier is preferable.</p>
 
                 
 
-                    <div class="highlight"><pre><span></span><span class="k">@prefix</span><span class="w"> </span><span class="nn">expandedlicensing:</span><span class="w"> </span><span class="nv">&lt;https://spdx.org/rdf/v3/ExpandedLicensing/&gt;</span><span class="w"> </span><span class="p">.</span>
+                    <div class="highlight"><pre><span></span><span class="k">@prefix</span><span class="w"> </span><span class="nn">core:</span><span class="w"> </span><span class="nv">&lt;https://spdx.org/rdf/v3/Core/&gt;</span><span class="w"> </span><span class="p">.</span>
 <span class="k">@prefix</span><span class="w"> </span><span class="nn">ns0:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2003/06/sw-vocab-status/ns#&gt;</span><span class="w"> </span><span class="p">.</span>
 <span class="k">@prefix</span><span class="w"> </span><span class="nn">owl:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2002/07/owl#&gt;</span><span class="w"> </span><span class="p">.</span>
 <span class="k">@prefix</span><span class="w"> </span><span class="nn">rdfs:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2000/01/rdf-schema#&gt;</span><span class="w"> </span><span class="p">.</span>
-<span class="k">@prefix</span><span class="w"> </span><span class="nn">xsd:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span><span class="w"> </span><span class="p">.</span>
 
-<span class="nn">expandedlicensing</span><span class="p">:</span><span class="nt">isDeprecatedAdditionId</span> <span class="kt">a</span> <span class="nn">owl</span><span class="p">:</span><span class="nt">DatatypeProperty</span> <span class="p">;</span>
-    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">comment</span> <span class="s">&quot;&quot;&quot;The isDeprecatedAdditionId property specifies whether an identifier for a</span>
-<span class="s">LicenseAddition has been marked as deprecated. If the property is not defined,</span>
-<span class="s">then it is presumed to be false (i.e., not deprecated).</span>
-
-<span class="s">If the LicenseAddition is included on the SPDX Exceptions List, then</span>
-<span class="s">the `deprecatedVersion` property indicates on which version release of the</span>
-<span class="s">Exceptions List it was first marked as deprecated.</span>
-
-<span class="s">&quot;Deprecated&quot; in this context refers to deprecating the use of the</span>
-<span class="s">_identifier_, not the underlying license addition. In other words, even if a</span>
-<span class="s">LicenseAddition&#39;s author or steward has stated that a particular</span>
-<span class="s">LicenseAddition generally should not be used, that would _not_ mean that the</span>
-<span class="s">LicenseAddition&#39;s identifier is &quot;deprecated.&quot; Rather, a LicenseAddition</span>
-<span class="s">operator is typically marked as &quot;deprecated&quot; when it is determined that use of</span>
-<span class="s">another identifier is preferable.&quot;&quot;&quot; ;</span>
-<span class="s">    rdfs:domain expandedlicensing:LicenseAddition ;</span>
-<span class="s">    rdfs:range xsd:boolean ;</span>
-<span class="s">    ns0:term_status &quot;Stable&quot; .</span>
+<span class="nn">core</span><span class="p">:</span><span class="nt">namespaceMap</span> <span class="kt">a</span> <span class="nn">owl</span><span class="p">:</span><span class="nt">ObjectProperty</span> <span class="p">;</span>
+    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">comment</span> <span class="s">&quot;This field provides a NamespaceMap of prefixes and associated namespace partial URIs applicable to an SpdxDocument and independent of any specific serialization format or instance.&quot;</span> <span class="p">;</span>
+    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">domain</span> <span class="nn">core</span><span class="p">:</span><span class="nt">SpdxDocument</span> <span class="p">;</span>
+    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">range</span> <span class="nn">core</span><span class="p">:</span><span class="nt">NamespaceMap</span> <span class="p">;</span>
+    <span class="nn">ns0</span><span class="p">:</span><span class="nt">term_status</span> <span class="s">&quot;Stable&quot;</span> <span class="p">.</span>
 </pre></div>
 
 
@@ -1215,7 +1186,7 @@ $('#search-input-sidebar').keyup(function() {
 
     $(document).ready(function (){
       $('#sidebar-wrapper').animate({
-          scrollTop: $("#sd_143").offset().top - 100
+          scrollTop: $("#sd_210").offset().top - 100
       }, 100);
     });
 
