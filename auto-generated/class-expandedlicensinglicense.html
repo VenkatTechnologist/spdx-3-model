@@ -1736,15 +1736,10 @@ where multiple, equivalent official translations exist.</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;isOsiApproved&quot; ;</span>
 <span class="s">            sh:path expandedlicensing:isOsiApproved ],</span>
-<span class="s">        [ sh:datatype xsd:string ;</span>
+<span class="s">        [ sh:datatype xsd:boolean ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:minCount 1 ;</span>
-<span class="s">            sh:name &quot;/SimpleLicensing/licenseText&quot; ;</span>
-<span class="s">            sh:path simplelicensing:licenseText ],</span>
-<span class="s">        [ sh:datatype xsd:string ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;standardLicenseHeader&quot; ;</span>
-<span class="s">            sh:path expandedlicensing:standardLicenseHeader ],</span>
+<span class="s">            sh:name &quot;isDeprecatedLicenseId&quot; ;</span>
+<span class="s">            sh:path expandedlicensing:isDeprecatedLicenseId ],</span>
 <span class="s">        [ sh:datatype xsd:string ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;obsoletedBy&quot; ;</span>
@@ -1753,14 +1748,19 @@ where multiple, equivalent official translations exist.</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;licenseXml&quot; ;</span>
 <span class="s">            sh:path expandedlicensing:licenseXml ],</span>
-<span class="s">        [ sh:datatype xsd:boolean ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;isDeprecatedLicenseId&quot; ;</span>
-<span class="s">            sh:path expandedlicensing:isDeprecatedLicenseId ],</span>
 <span class="s">        [ sh:datatype xsd:string ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;standardLicenseTemplate&quot; ;</span>
-<span class="s">            sh:path expandedlicensing:standardLicenseTemplate ] .</span>
+<span class="s">            sh:path expandedlicensing:standardLicenseTemplate ],</span>
+<span class="s">        [ sh:datatype xsd:string ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:name &quot;standardLicenseHeader&quot; ;</span>
+<span class="s">            sh:path expandedlicensing:standardLicenseHeader ],</span>
+<span class="s">        [ sh:datatype xsd:string ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:minCount 1 ;</span>
+<span class="s">            sh:name &quot;/SimpleLicensing/licenseText&quot; ;</span>
+<span class="s">            sh:path simplelicensing:licenseText ] .</span>
 </pre></div>
 
             
@@ -1790,7 +1790,7 @@ where multiple, equivalent official translations exist.</span>
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Mon, 11 Dec 2023 23:38:11 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Tue, 12 Dec 2023 21:39:56 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>
