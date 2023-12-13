@@ -1751,29 +1751,29 @@ where multiple, equivalent official translations exist.</span>
 <span class="s">        [ sh:datatype xsd:anyURI ;</span>
 <span class="s">            sh:name &quot;configSourceUri&quot; ;</span>
 <span class="s">            sh:path build:configSourceUri ],</span>
-<span class="s">        [ sh:datatype core:DateTime ;</span>
+<span class="s">        [ sh:datatype xsd:string ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;buildStartTime&quot; ;</span>
-<span class="s">            sh:path build:buildStartTime ],</span>
+<span class="s">            sh:name &quot;buildId&quot; ;</span>
+<span class="s">            sh:path build:buildId ],</span>
+<span class="s">        [ sh:class core:DictionaryEntry ;</span>
+<span class="s">            sh:name &quot;parameters&quot; ;</span>
+<span class="s">            sh:path build:parameters ],</span>
+<span class="s">        [ sh:class core:DictionaryEntry ;</span>
+<span class="s">            sh:name &quot;environment&quot; ;</span>
+<span class="s">            sh:path build:environment ],</span>
 <span class="s">        [ sh:datatype core:DateTime ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;buildEndTime&quot; ;</span>
 <span class="s">            sh:path build:buildEndTime ],</span>
-<span class="s">        [ sh:class core:DictionaryEntry ;</span>
-<span class="s">            sh:name &quot;environment&quot; ;</span>
-<span class="s">            sh:path build:environment ],</span>
-<span class="s">        [ sh:class core:DictionaryEntry ;</span>
-<span class="s">            sh:name &quot;parameters&quot; ;</span>
-<span class="s">            sh:path build:parameters ],</span>
 <span class="s">        [ sh:datatype xsd:anyURI ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:minCount 1 ;</span>
 <span class="s">            sh:name &quot;buildType&quot; ;</span>
 <span class="s">            sh:path build:buildType ],</span>
-<span class="s">        [ sh:datatype xsd:string ;</span>
+<span class="s">        [ sh:datatype core:DateTime ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;buildId&quot; ;</span>
-<span class="s">            sh:path build:buildId ] .</span>
+<span class="s">            sh:name &quot;buildStartTime&quot; ;</span>
+<span class="s">            sh:path build:buildStartTime ] .</span>
 </pre></div>
 
             
@@ -1803,7 +1803,7 @@ where multiple, equivalent official translations exist.</span>
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Tue, 12 Dec 2023 21:39:55 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Wed, 13 Dec 2023 17:16:55 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>
