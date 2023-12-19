@@ -1663,42 +1663,6 @@ distinguishing the License from other Licenses.</span>
                         </td>
                       </tr>
                     
-                      <tr>
-                        <td class="firsttd">
-                          <a class="propcolor" title="expandedlicensing:seeAlso" href="prop-expandedlicensingseealso.html">expandedlicensing:seeAlso</a>
-                        </td>
-                        <td class="secondtd">
-                          <i>owl:DatatypeProperty<i>
-                        </td>
-                        <td class="thirdtd">
-                          <span>A seeAlso defines a cross-reference with a URL where the License or
-LicenseAddition can be found in use by one or a few projects.
-
-If applicable, it should include a URL where the license text is posted by
-the license steward, particularly if the license steward has made available a
-&#34;canonical&#34; primary URL for the license text.
-
-If the license is OSI approved, a seeAlso should be included with the URL for
-the license&#39;s listing on the OSI website.
-
-The seeAlso URL may refer to a previously-available URL for the License or
-LicenseAddition which is no longer active.
-
-Where applicable, the seeAlso URL should include the license text in its
-native language. seeAlso URLs to English or other translations may be included
-where multiple, equivalent official translations exist.</span>
-                        </td>
-                        <td class="fourthtd">
-                          
-                            
-                                
-                                  <i>xsd:anyURI</i>
-                                
-                            
-                          
-                        </td>
-                      </tr>
-                    
                   
                 
               
@@ -1742,27 +1706,12 @@ where multiple, equivalent official translations exist.</span>
 <span class="s">Note that buildStartTime and buildEndTime are optional, and may be omitted to simplify creating reproducible builds.&quot;&quot;&quot; ;</span>
 <span class="s">    rdfs:subClassOf core:Element ;</span>
 <span class="s">    ns0:term_status &quot;Stable&quot; ;</span>
-<span class="s">    sh:property [ sh:class core:Hash ;</span>
-<span class="s">            sh:name &quot;configSourceDigest&quot; ;</span>
-<span class="s">            sh:path build:configSourceDigest ],</span>
-<span class="s">        [ sh:datatype core:DateTime ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;buildStartTime&quot; ;</span>
-<span class="s">            sh:path build:buildStartTime ],</span>
-<span class="s">        [ sh:class core:DictionaryEntry ;</span>
-<span class="s">            sh:name &quot;environment&quot; ;</span>
-<span class="s">            sh:path build:environment ],</span>
-<span class="s">        [ sh:datatype xsd:string ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;buildId&quot; ;</span>
-<span class="s">            sh:path build:buildId ],</span>
-<span class="s">        [ sh:datatype xsd:string ;</span>
+<span class="s">    sh:property [ sh:datatype xsd:string ;</span>
 <span class="s">            sh:name &quot;configSourceEntrypoint&quot; ;</span>
 <span class="s">            sh:path build:configSourceEntrypoint ],</span>
-<span class="s">        [ sh:datatype core:DateTime ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;buildEndTime&quot; ;</span>
-<span class="s">            sh:path build:buildEndTime ],</span>
+<span class="s">        [ sh:class core:Hash ;</span>
+<span class="s">            sh:name &quot;configSourceDigest&quot; ;</span>
+<span class="s">            sh:path build:configSourceDigest ],</span>
 <span class="s">        [ sh:datatype xsd:anyURI ;</span>
 <span class="s">            sh:name &quot;configSourceUri&quot; ;</span>
 <span class="s">            sh:path build:configSourceUri ],</span>
@@ -1772,8 +1721,23 @@ where multiple, equivalent official translations exist.</span>
 <span class="s">            sh:name &quot;buildType&quot; ;</span>
 <span class="s">            sh:path build:buildType ],</span>
 <span class="s">        [ sh:class core:DictionaryEntry ;</span>
+<span class="s">            sh:name &quot;environment&quot; ;</span>
+<span class="s">            sh:path build:environment ],</span>
+<span class="s">        [ sh:class core:DictionaryEntry ;</span>
 <span class="s">            sh:name &quot;parameters&quot; ;</span>
-<span class="s">            sh:path build:parameters ] .</span>
+<span class="s">            sh:path build:parameters ],</span>
+<span class="s">        [ sh:datatype core:DateTime ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:name &quot;buildEndTime&quot; ;</span>
+<span class="s">            sh:path build:buildEndTime ],</span>
+<span class="s">        [ sh:datatype core:DateTime ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:name &quot;buildStartTime&quot; ;</span>
+<span class="s">            sh:path build:buildStartTime ],</span>
+<span class="s">        [ sh:datatype xsd:string ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:name &quot;buildId&quot; ;</span>
+<span class="s">            sh:path build:buildId ] .</span>
 </pre></div>
 
             
@@ -1803,7 +1767,7 @@ where multiple, equivalent official translations exist.</span>
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Tue, 19 Dec 2023 17:25:39 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Tue, 19 Dec 2023 17:28:28 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>

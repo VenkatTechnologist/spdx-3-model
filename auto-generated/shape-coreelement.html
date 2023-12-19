@@ -1074,18 +1074,26 @@ and inter-relatable content objects.</p>
 <span class="s">and inter-relatable content objects.&quot;&quot;&quot; ;</span>
 <span class="s">    rdfs:subClassOf owl:Thing ;</span>
 <span class="s">    ns0:term_status &quot;Stable&quot; ;</span>
-<span class="s">    sh:property [ sh:class core:ExternalRef ;</span>
-<span class="s">            sh:name &quot;externalRef&quot; ;</span>
-<span class="s">            sh:path core:externalRef ],</span>
+<span class="s">    sh:property [ sh:datatype xsd:string ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:name &quot;name&quot; ;</span>
+<span class="s">            sh:path core:name ],</span>
 <span class="s">        [ sh:datatype xsd:string ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;description&quot; ;</span>
-<span class="s">            sh:path core:description ],</span>
+<span class="s">            sh:name &quot;summary&quot; ;</span>
+<span class="s">            sh:path core:summary ],</span>
+<span class="s">        [ sh:class core:ExternalRef ;</span>
+<span class="s">            sh:name &quot;externalRef&quot; ;</span>
+<span class="s">            sh:path core:externalRef ],</span>
 <span class="s">        [ sh:class core:CreationInfo ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:minCount 1 ;</span>
 <span class="s">            sh:name &quot;creationInfo&quot; ;</span>
 <span class="s">            sh:path core:creationInfo ],</span>
+<span class="s">        [ sh:datatype xsd:string ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:name &quot;comment&quot; ;</span>
+<span class="s">            sh:path core:comment ],</span>
 <span class="s">        [ sh:datatype core:Extension ;</span>
 <span class="s">            sh:name &quot;extension&quot; ;</span>
 <span class="s">            sh:path core:extension ],</span>
@@ -1094,16 +1102,8 @@ and inter-relatable content objects.</p>
 <span class="s">            sh:path core:externalIdentifier ],</span>
 <span class="s">        [ sh:datatype xsd:string ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;name&quot; ;</span>
-<span class="s">            sh:path core:name ],</span>
-<span class="s">        [ sh:datatype xsd:string ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;summary&quot; ;</span>
-<span class="s">            sh:path core:summary ],</span>
-<span class="s">        [ sh:datatype xsd:string ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;comment&quot; ;</span>
-<span class="s">            sh:path core:comment ],</span>
+<span class="s">            sh:name &quot;description&quot; ;</span>
+<span class="s">            sh:path core:description ],</span>
 <span class="s">        [ sh:class core:IntegrityMethod ;</span>
 <span class="s">            sh:name &quot;verifiedUsing&quot; ;</span>
 <span class="s">            sh:path core:verifiedUsing ] .</span>
@@ -1136,7 +1136,7 @@ and inter-relatable content objects.</p>
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Tue, 19 Dec 2023 17:25:39 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Tue, 19 Dec 2023 17:28:29 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>
@@ -1197,7 +1197,7 @@ $('#search-input-sidebar').keyup(function() {
 
     $(document).ready(function (){
       $('#sidebar-wrapper').animate({
-          scrollTop: $("#sd_376").offset().top - 100
+          scrollTop: $("#sd_372").offset().top - 100
       }, 100);
     });
 
