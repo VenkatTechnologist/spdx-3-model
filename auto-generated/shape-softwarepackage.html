@@ -578,7 +578,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
           
               <li class="second-level" style="line-height: 20px;" id="sd_105"><a   href="prop-coredatalicense.html">core:dataLicense</a></li>
           
-              <li class="second-level" style="line-height: 20px;" id="sd_202"><a   href="prop-coredefiningdocument.html">core:definingDocument</a></li>
+              <li class="second-level" style="line-height: 20px;" id="sd_202"><a   href="prop-coredefiningartifact.html">core:definingArtifact</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_106"><a   href="prop-coredescription.html">core:description</a></li>
           
@@ -1096,7 +1096,11 @@ External property restriction on /Core/Element/name: minCount: 1</p>
 <span class="s">External property restriction on /Core/Element/name: minCount: 1&quot;&quot;&quot; ;</span>
 <span class="s">    rdfs:subClassOf software:SoftwareArtifact ;</span>
 <span class="s">    ns0:term_status &quot;Stable&quot; ;</span>
-<span class="s">    sh:property [ sh:datatype xsd:anyURI ;</span>
+<span class="s">    sh:property [ sh:datatype xsd:string ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:name &quot;sourceInfo&quot; ;</span>
+<span class="s">            sh:path software:sourceInfo ],</span>
+<span class="s">        [ sh:datatype xsd:anyURI ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;homePage&quot; ;</span>
 <span class="s">            sh:path software:homePage ],</span>
@@ -1104,18 +1108,14 @@ External property restriction on /Core/Element/name: minCount: 1</p>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;packageUrl&quot; ;</span>
 <span class="s">            sh:path software:packageUrl ],</span>
-<span class="s">        [ sh:datatype xsd:string ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;packageVersion&quot; ;</span>
-<span class="s">            sh:path software:packageVersion ],</span>
-<span class="s">        [ sh:datatype xsd:string ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;sourceInfo&quot; ;</span>
-<span class="s">            sh:path software:sourceInfo ],</span>
 <span class="s">        [ sh:datatype xsd:anyURI ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;downloadLocation&quot; ;</span>
-<span class="s">            sh:path software:downloadLocation ] .</span>
+<span class="s">            sh:path software:downloadLocation ],</span>
+<span class="s">        [ sh:datatype xsd:string ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:name &quot;packageVersion&quot; ;</span>
+<span class="s">            sh:path software:packageVersion ] .</span>
 </pre></div>
 
             
@@ -1145,7 +1145,7 @@ External property restriction on /Core/Element/name: minCount: 1</p>
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Tue, 19 Dec 2023 15:57:41 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Tue, 19 Dec 2023 17:25:39 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>
@@ -1206,7 +1206,7 @@ $('#search-input-sidebar').keyup(function() {
 
     $(document).ready(function (){
       $('#sidebar-wrapper').animate({
-          scrollTop: $("#sd_373").offset().top - 100
+          scrollTop: $("#sd_352").offset().top - 100
       }, 100);
     });
 

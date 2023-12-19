@@ -578,7 +578,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
           
               <li class="second-level" style="line-height: 20px;" id="sd_105"><a   href="prop-coredatalicense.html">core:dataLicense</a></li>
           
-              <li class="second-level" style="line-height: 20px;" id="sd_202"><a   href="prop-coredefiningdocument.html">core:definingDocument</a></li>
+              <li class="second-level" style="line-height: 20px;" id="sd_202"><a   href="prop-coredefiningartifact.html">core:definingArtifact</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_106"><a   href="prop-coredescription.html">core:description</a></li>
           
@@ -1069,16 +1069,16 @@ human-readable and smaller serialized representation of the Elements.</p>
 <span class="s">3) An SPDX content consumer/producer wishing to maintain consistent prefix use while round tripping from SPDX content received, deserialized, modified/extended in some way, and then reserialized in the same serialization form.</span>
 <span class="s">   In this case the prefix-namespace mappings utilized in the content are transformed from the original native namespace/prefix into the in memory NamespaceMap then transformed from the NamespaceMap back into the resultant serialization native namespace / prefix format.&quot;&quot;&quot; ;</span>
 <span class="s">    ns0:term_status &quot;Stable&quot; ;</span>
-<span class="s">    sh:property [ sh:datatype xsd:anyURI ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:minCount 1 ;</span>
-<span class="s">            sh:name &quot;namespace&quot; ;</span>
-<span class="s">            sh:path core:namespace ],</span>
-<span class="s">        [ sh:datatype xsd:string ;</span>
+<span class="s">    sh:property [ sh:datatype xsd:string ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:minCount 1 ;</span>
 <span class="s">            sh:name &quot;prefix&quot; ;</span>
-<span class="s">            sh:path core:prefix ] .</span>
+<span class="s">            sh:path core:prefix ],</span>
+<span class="s">        [ sh:datatype xsd:anyURI ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:minCount 1 ;</span>
+<span class="s">            sh:name &quot;namespace&quot; ;</span>
+<span class="s">            sh:path core:namespace ] .</span>
 </pre></div>
 
             
@@ -1108,7 +1108,7 @@ human-readable and smaller serialized representation of the Elements.</p>
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Tue, 19 Dec 2023 15:57:40 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Tue, 19 Dec 2023 17:25:39 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>
@@ -1169,7 +1169,7 @@ $('#search-input-sidebar').keyup(function() {
 
     $(document).ready(function (){
       $('#sidebar-wrapper').animate({
-          scrollTop: $("#sd_353").offset().top - 100
+          scrollTop: $("#sd_342").offset().top - 100
       }, 100);
     });
 

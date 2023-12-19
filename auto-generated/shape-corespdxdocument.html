@@ -578,7 +578,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
           
               <li class="second-level" style="line-height: 20px;" id="sd_105"><a   href="prop-coredatalicense.html">core:dataLicense</a></li>
           
-              <li class="second-level" style="line-height: 20px;" id="sd_202"><a   href="prop-coredefiningdocument.html">core:definingDocument</a></li>
+              <li class="second-level" style="line-height: 20px;" id="sd_202"><a   href="prop-coredefiningartifact.html">core:definingArtifact</a></li>
           
               <li class="second-level" style="line-height: 20px;" id="sd_106"><a   href="prop-coredescription.html">core:description</a></li>
           
@@ -1074,12 +1074,12 @@ Information we wish to preserve about a specific instance of serialization of th
 <span class="s">    sh:property [ sh:class core:ExternalMap ;</span>
 <span class="s">            sh:name &quot;imports&quot; ;</span>
 <span class="s">            sh:path core:imports ],</span>
-<span class="s">        [ sh:class core:NamespaceMap ;</span>
-<span class="s">            sh:name &quot;namespaceMap&quot; ;</span>
-<span class="s">            sh:path core:namespaceMap ],</span>
 <span class="s">        [ sh:datatype core:AnyLicenseInfo ;</span>
 <span class="s">            sh:name &quot;dataLicense&quot; ;</span>
-<span class="s">            sh:path core:dataLicense ] .</span>
+<span class="s">            sh:path core:dataLicense ],</span>
+<span class="s">        [ sh:class core:NamespaceMap ;</span>
+<span class="s">            sh:name &quot;namespaceMap&quot; ;</span>
+<span class="s">            sh:path core:namespaceMap ] .</span>
 </pre></div>
 
             
@@ -1109,7 +1109,7 @@ Information we wish to preserve about a specific instance of serialization of th
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Tue, 19 Dec 2023 15:57:40 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Tue, 19 Dec 2023 17:25:39 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>
@@ -1170,7 +1170,7 @@ $('#search-input-sidebar').keyup(function() {
 
     $(document).ready(function (){
       $('#sidebar-wrapper').animate({
-          scrollTop: $("#sd_325").offset().top - 100
+          scrollTop: $("#sd_373").offset().top - 100
       }, 100);
     });
 
