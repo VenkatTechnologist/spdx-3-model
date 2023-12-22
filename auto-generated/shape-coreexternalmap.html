@@ -1052,10 +1052,6 @@ such as its provenance, where to retrieve it, and how to verify its integrity.</
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;locationHint&quot; ;</span>
 <span class="s">            sh:path core:locationHint ],</span>
-<span class="s">        [ sh:class core:Artifact ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;definingArtifact&quot; ;</span>
-<span class="s">            sh:path core:definingArtifact ],</span>
 <span class="s">        [ sh:datatype xsd:anyURI ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:minCount 1 ;</span>
@@ -1063,7 +1059,11 @@ such as its provenance, where to retrieve it, and how to verify its integrity.</
 <span class="s">            sh:path core:externalSpdxId ],</span>
 <span class="s">        [ sh:class core:IntegrityMethod ;</span>
 <span class="s">            sh:name &quot;verifiedUsing&quot; ;</span>
-<span class="s">            sh:path core:verifiedUsing ] .</span>
+<span class="s">            sh:path core:verifiedUsing ],</span>
+<span class="s">        [ sh:class core:Artifact ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:name &quot;definingArtifact&quot; ;</span>
+<span class="s">            sh:path core:definingArtifact ] .</span>
 </pre></div>
 
             
@@ -1093,7 +1093,7 @@ such as its provenance, where to retrieve it, and how to verify its integrity.</
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Tue, 19 Dec 2023 17:39:57 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Fri, 22 Dec 2023 19:16:21 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>
@@ -1154,7 +1154,7 @@ $('#search-input-sidebar').keyup(function() {
 
     $(document).ready(function (){
       $('#sidebar-wrapper').animate({
-          scrollTop: $("#sd_374").offset().top - 100
+          scrollTop: $("#sd_364").offset().top - 100
       }, 100);
     });
 

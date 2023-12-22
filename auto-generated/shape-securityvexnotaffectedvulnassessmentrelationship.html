@@ -1135,18 +1135,18 @@ for VEX.</p>
 <span class="s">```&quot;&quot;&quot; ;</span>
 <span class="s">    rdfs:subClassOf security:VexVulnAssessmentRelationship ;</span>
 <span class="s">    ns0:term_status &quot;Stable&quot; ;</span>
-<span class="s">    sh:property [ sh:class security:VexJustificationType ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;justificationType&quot; ;</span>
-<span class="s">            sh:path security:justificationType ],</span>
-<span class="s">        [ sh:datatype core:DateTime ;</span>
+<span class="s">    sh:property [ sh:datatype core:DateTime ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;impactStatementTime&quot; ;</span>
 <span class="s">            sh:path security:impactStatementTime ],</span>
 <span class="s">        [ sh:datatype xsd:string ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;impactStatement&quot; ;</span>
-<span class="s">            sh:path security:impactStatement ] .</span>
+<span class="s">            sh:path security:impactStatement ],</span>
+<span class="s">        [ sh:class security:VexJustificationType ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:name &quot;justificationType&quot; ;</span>
+<span class="s">            sh:path security:justificationType ] .</span>
 </pre></div>
 
             
@@ -1176,7 +1176,7 @@ for VEX.</p>
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Tue, 19 Dec 2023 17:39:57 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Fri, 22 Dec 2023 19:16:21 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>
@@ -1237,7 +1237,7 @@ $('#search-input-sidebar').keyup(function() {
 
     $(document).ready(function (){
       $('#sidebar-wrapper').animate({
-          scrollTop: $("#sd_321").offset().top - 100
+          scrollTop: $("#sd_343").offset().top - 100
       }, 100);
     });
 
