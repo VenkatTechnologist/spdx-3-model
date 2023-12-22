@@ -1562,18 +1562,18 @@ distinguishing the License from other Licenses.</span>
 <span class="s">SPDX License Expressions provide a way for one to construct expressions that more accurately represent the licensing terms typically found in open source software source code. A license expression could be a single license identifier found on the SPDX License List; a user defined license reference denoted by the LicenseRef-idString; a license identifier combined with an SPDX exception; or some combination of license identifiers, license references and exceptions constructed using a small set of defined operators (e.g., AND, OR, WITH and +). We provide the definition of what constitutes a valid an SPDX License Expression in this section.&quot;&quot;&quot; ;</span>
 <span class="s">    rdfs:subClassOf simplelicensing:AnyLicenseInfo ;</span>
 <span class="s">    ns0:term_status &quot;Stable&quot; ;</span>
-<span class="s">    sh:property [ sh:class core:DictionaryEntry ;</span>
+<span class="s">    sh:property [ sh:datatype xsd:string ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:minCount 1 ;</span>
+<span class="s">            sh:name &quot;licenseExpression&quot; ;</span>
+<span class="s">            sh:path simplelicensing:licenseExpression ],</span>
+<span class="s">        [ sh:class core:DictionaryEntry ;</span>
 <span class="s">            sh:name &quot;customIdToUri&quot; ;</span>
 <span class="s">            sh:path simplelicensing:customIdToUri ],</span>
 <span class="s">        [ sh:datatype core:SemVer ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;licenseListVersion&quot; ;</span>
-<span class="s">            sh:path simplelicensing:licenseListVersion ],</span>
-<span class="s">        [ sh:datatype xsd:string ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:minCount 1 ;</span>
-<span class="s">            sh:name &quot;licenseExpression&quot; ;</span>
-<span class="s">            sh:path simplelicensing:licenseExpression ] .</span>
+<span class="s">            sh:path simplelicensing:licenseListVersion ] .</span>
 </pre></div>
 
             
@@ -1603,7 +1603,7 @@ distinguishing the License from other Licenses.</span>
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Fri, 22 Dec 2023 19:16:21 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Fri, 22 Dec 2023 20:56:38 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>
