@@ -942,7 +942,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                       
                         <li><a href="shape-coreagent.html" title="'Agent' - The Agent class represents anything that has the potential to act on a system. This could be a person, organization,..">core:Agent</a></li>
                       
-                        <li><a href="shape-coreannotation.html" title="'Annotation' - An Annotation is an assertion made in relation to one or more elements.">core:Annotation</a></li>
+                        <li><a href="shape-coreannotation.html" title="'Annotation' - An Annotation is an assertion made in relation to one or more elements. The `contentType` property describes the format of..">core:Annotation</a></li>
                       
                         <li><a href="shape-coreartifact.html" title="'Artifact' - An artifact is a distinct article or unit within the digital domain, such as an electronic file, a software package,..">core:Artifact</a></li>
                       
@@ -1072,31 +1072,31 @@ and inter-relatable content objects.</p>
 <span class="s">            sh:minCount 1 ;</span>
 <span class="s">            sh:name &quot;creationInfo&quot; ;</span>
 <span class="s">            sh:path core:creationInfo ],</span>
-<span class="s">        [ sh:class core:ExternalRef ;</span>
-<span class="s">            sh:name &quot;externalRef&quot; ;</span>
-<span class="s">            sh:path core:externalRef ],</span>
-<span class="s">        [ sh:datatype xsd:string ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;name&quot; ;</span>
-<span class="s">            sh:path core:name ],</span>
-<span class="s">        [ sh:datatype xsd:string ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;description&quot; ;</span>
-<span class="s">            sh:path core:description ],</span>
-<span class="s">        [ sh:class core:ExternalIdentifier ;</span>
-<span class="s">            sh:name &quot;externalIdentifier&quot; ;</span>
-<span class="s">            sh:path core:externalIdentifier ],</span>
 <span class="s">        [ sh:class core:IntegrityMethod ;</span>
 <span class="s">            sh:name &quot;verifiedUsing&quot; ;</span>
 <span class="s">            sh:path core:verifiedUsing ],</span>
 <span class="s">        [ sh:datatype xsd:string ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;summary&quot; ;</span>
-<span class="s">            sh:path core:summary ],</span>
+<span class="s">            sh:name &quot;description&quot; ;</span>
+<span class="s">            sh:path core:description ],</span>
 <span class="s">        [ sh:datatype xsd:string ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;comment&quot; ;</span>
-<span class="s">            sh:path core:comment ] .</span>
+<span class="s">            sh:path core:comment ],</span>
+<span class="s">        [ sh:datatype xsd:string ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:name &quot;summary&quot; ;</span>
+<span class="s">            sh:path core:summary ],</span>
+<span class="s">        [ sh:class core:ExternalRef ;</span>
+<span class="s">            sh:name &quot;externalRef&quot; ;</span>
+<span class="s">            sh:path core:externalRef ],</span>
+<span class="s">        [ sh:class core:ExternalIdentifier ;</span>
+<span class="s">            sh:name &quot;externalIdentifier&quot; ;</span>
+<span class="s">            sh:path core:externalIdentifier ],</span>
+<span class="s">        [ sh:datatype xsd:string ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:name &quot;name&quot; ;</span>
+<span class="s">            sh:path core:name ] .</span>
 </pre></div>
 
             
@@ -1126,7 +1126,7 @@ and inter-relatable content objects.</p>
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Fri, 22 Dec 2023 21:44:21 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Tue, 09 Jan 2024 19:40:46 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>
@@ -1187,7 +1187,7 @@ $('#search-input-sidebar').keyup(function() {
 
     $(document).ready(function (){
       $('#sidebar-wrapper').animate({
-          scrollTop: $("#sd_345").offset().top - 100
+          scrollTop: $("#sd_356").offset().top - 100
       }, 100);
     });
 

@@ -1651,15 +1651,15 @@ distinguishing the License from other Licenses.</span>
 <span class="s">Any instance of serialization of SPDX data MUST NOT contain more than one SpdxDocument element definition.&quot;&quot;&quot; ;</span>
 <span class="s">    rdfs:subClassOf core:ElementCollection ;</span>
 <span class="s">    ns0:term_status &quot;Stable&quot; ;</span>
-<span class="s">    sh:property [ sh:class core:ExternalMap ;</span>
+<span class="s">    sh:property [ sh:datatype core:AnyLicenseInfo ;</span>
+<span class="s">            sh:name &quot;dataLicense&quot; ;</span>
+<span class="s">            sh:path core:dataLicense ],</span>
+<span class="s">        [ sh:class core:ExternalMap ;</span>
 <span class="s">            sh:name &quot;imports&quot; ;</span>
 <span class="s">            sh:path core:imports ],</span>
 <span class="s">        [ sh:class core:NamespaceMap ;</span>
 <span class="s">            sh:name &quot;namespaceMap&quot; ;</span>
-<span class="s">            sh:path core:namespaceMap ],</span>
-<span class="s">        [ sh:datatype core:AnyLicenseInfo ;</span>
-<span class="s">            sh:name &quot;dataLicense&quot; ;</span>
-<span class="s">            sh:path core:dataLicense ] .</span>
+<span class="s">            sh:path core:namespaceMap ] .</span>
 </pre></div>
 
             
@@ -1689,7 +1689,7 @@ distinguishing the License from other Licenses.</span>
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Fri, 22 Dec 2023 21:44:21 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Tue, 09 Jan 2024 19:40:45 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>

@@ -938,7 +938,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
               <li>
               <a href="shape-coreelement.html" title="'Element' - An Element is a representation of a fundamental concept either directly inherent to the Bill of Materials (BOM) domain or..">core:Element</a>
                 <ul>
-                  <li><a style="font-weight: bold;" title="'Annotation' - An Annotation is an assertion made in relation to one or more elements.">core:Annotation</a>
+                  <li><a style="font-weight: bold;" title="'Annotation' - An Annotation is an assertion made in relation to one or more elements. The `contentType` property describes the format of..">core:Annotation</a>
                   
                   </li>
                 </ul>
@@ -992,7 +992,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
               <h3 class="panel-title">Description</h3>
             </div>
             <div class="panel-body">
-              <p>An Annotation is an assertion made in relation to one or more elements.</p>
+              <p>An Annotation is an assertion made in relation to one or more elements. The `contentType` property describes the format of the `statement` property.</p>
             </div>
           </div>
         </div>
@@ -1049,27 +1049,27 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 
 <span class="nn">core</span><span class="p">:</span><span class="nt">Annotation</span> <span class="kt">a</span> <span class="nn">owl</span><span class="p">:</span><span class="nt">Class</span><span class="p">,</span>
         <span class="nn">sh</span><span class="p">:</span><span class="nt">NodeShape</span> <span class="p">;</span>
-    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">comment</span> <span class="s">&quot;An Annotation is an assertion made in relation to one or more elements.&quot;</span> <span class="p">;</span>
+    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">comment</span> <span class="s">&quot;An Annotation is an assertion made in relation to one or more elements. The `contentType` property describes the format of the `statement` property.&quot;</span> <span class="p">;</span>
     <span class="nn">rdfs</span><span class="p">:</span><span class="nt">subClassOf</span> <span class="nn">core</span><span class="p">:</span><span class="nt">Element</span> <span class="p">;</span>
     <span class="nn">ns0</span><span class="p">:</span><span class="nt">term_status</span> <span class="s">&quot;Stable&quot;</span> <span class="p">;</span>
-    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span> <span class="nn">sh</span><span class="p">:</span><span class="nt">class</span> <span class="nn">core</span><span class="p">:</span><span class="nt">AnnotationType</span> <span class="p">;</span>
-            <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>
-            <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>
-            <span class="nn">sh</span><span class="p">:</span><span class="nt">name</span> <span class="s">&quot;annotationType&quot;</span> <span class="p">;</span>
-            <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">core</span><span class="p">:</span><span class="nt">annotationType</span> <span class="p">],</span>
-        <span class="p">[</span> <span class="nn">sh</span><span class="p">:</span><span class="nt">datatype</span> <span class="nn">core</span><span class="p">:</span><span class="nt">MediaType</span> <span class="p">;</span>
+    <span class="nn">sh</span><span class="p">:</span><span class="nt">property</span> <span class="p">[</span> <span class="nn">sh</span><span class="p">:</span><span class="nt">datatype</span> <span class="nn">core</span><span class="p">:</span><span class="nt">MediaType</span> <span class="p">;</span>
             <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>
             <span class="nn">sh</span><span class="p">:</span><span class="nt">name</span> <span class="s">&quot;contentType&quot;</span> <span class="p">;</span>
             <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">core</span><span class="p">:</span><span class="nt">contentType</span> <span class="p">],</span>
-        <span class="p">[</span> <span class="nn">sh</span><span class="p">:</span><span class="nt">datatype</span> <span class="nn">xsd</span><span class="p">:</span><span class="nt">string</span> <span class="p">;</span>
-            <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>
-            <span class="nn">sh</span><span class="p">:</span><span class="nt">name</span> <span class="s">&quot;statement&quot;</span> <span class="p">;</span>
-            <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">core</span><span class="p">:</span><span class="nt">statement</span> <span class="p">],</span>
         <span class="p">[</span> <span class="nn">sh</span><span class="p">:</span><span class="nt">class</span> <span class="nn">core</span><span class="p">:</span><span class="nt">Element</span> <span class="p">;</span>
             <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>
             <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>
             <span class="nn">sh</span><span class="p">:</span><span class="nt">name</span> <span class="s">&quot;subject&quot;</span> <span class="p">;</span>
-            <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">core</span><span class="p">:</span><span class="nt">subject</span> <span class="p">]</span> <span class="p">.</span>
+            <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">core</span><span class="p">:</span><span class="nt">subject</span> <span class="p">],</span>
+        <span class="p">[</span> <span class="nn">sh</span><span class="p">:</span><span class="nt">class</span> <span class="nn">core</span><span class="p">:</span><span class="nt">AnnotationType</span> <span class="p">;</span>
+            <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>
+            <span class="nn">sh</span><span class="p">:</span><span class="nt">minCount</span> <span class="mi">1</span> <span class="p">;</span>
+            <span class="nn">sh</span><span class="p">:</span><span class="nt">name</span> <span class="s">&quot;annotationType&quot;</span> <span class="p">;</span>
+            <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">core</span><span class="p">:</span><span class="nt">annotationType</span> <span class="p">],</span>
+        <span class="p">[</span> <span class="nn">sh</span><span class="p">:</span><span class="nt">datatype</span> <span class="nn">xsd</span><span class="p">:</span><span class="nt">string</span> <span class="p">;</span>
+            <span class="nn">sh</span><span class="p">:</span><span class="nt">maxCount</span> <span class="mi">1</span> <span class="p">;</span>
+            <span class="nn">sh</span><span class="p">:</span><span class="nt">name</span> <span class="s">&quot;statement&quot;</span> <span class="p">;</span>
+            <span class="nn">sh</span><span class="p">:</span><span class="nt">path</span> <span class="nn">core</span><span class="p">:</span><span class="nt">statement</span> <span class="p">]</span> <span class="p">.</span>
 </pre></div>
 
             
@@ -1099,7 +1099,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Fri, 22 Dec 2023 21:44:21 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Tue, 09 Jan 2024 19:40:46 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>
@@ -1160,7 +1160,7 @@ $('#search-input-sidebar').keyup(function() {
 
     $(document).ready(function (){
       $('#sidebar-wrapper').animate({
-          scrollTop: $("#sd_355").offset().top - 100
+          scrollTop: $("#sd_329").offset().top - 100
       }, 100);
     });
 
