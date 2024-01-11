@@ -1062,16 +1062,16 @@ This is commonly used for integrity checking of data.</p>
 <span class="s">This is commonly used for integrity checking of data.&quot;&quot;&quot; ;</span>
 <span class="s">    rdfs:subClassOf core:IntegrityMethod ;</span>
 <span class="s">    ns0:term_status &quot;Stable&quot; ;</span>
-<span class="s">    sh:property [ sh:class core:HashAlgorithm ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:minCount 1 ;</span>
-<span class="s">            sh:name &quot;algorithm&quot; ;</span>
-<span class="s">            sh:path core:algorithm ],</span>
-<span class="s">        [ sh:datatype xsd:string ;</span>
+<span class="s">    sh:property [ sh:datatype xsd:string ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:minCount 1 ;</span>
 <span class="s">            sh:name &quot;hashValue&quot; ;</span>
-<span class="s">            sh:path core:hashValue ] .</span>
+<span class="s">            sh:path core:hashValue ],</span>
+<span class="s">        [ sh:class core:HashAlgorithm ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:minCount 1 ;</span>
+<span class="s">            sh:name &quot;algorithm&quot; ;</span>
+<span class="s">            sh:path core:algorithm ] .</span>
 </pre></div>
 
             
@@ -1101,7 +1101,7 @@ This is commonly used for integrity checking of data.</p>
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Tue, 09 Jan 2024 23:08:25 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Thu, 11 Jan 2024 13:02:56 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>
@@ -1162,7 +1162,7 @@ $('#search-input-sidebar').keyup(function() {
 
     $(document).ready(function (){
       $('#sidebar-wrapper').animate({
-          scrollTop: $("#sd_332").offset().top - 100
+          scrollTop: $("#sd_357").offset().top - 100
       }, 100);
     });
 

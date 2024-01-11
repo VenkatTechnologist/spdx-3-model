@@ -1079,6 +1079,10 @@ External property restriction on /Core/Relationship/to: minCount: 1</p>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;/Core/suppliedBy&quot; ;</span>
 <span class="s">            sh:path core:suppliedBy ],</span>
+<span class="s">        [ sh:class core:Element ;</span>
+<span class="s">            sh:maxCount 1 ;</span>
+<span class="s">            sh:name &quot;assessedElement&quot; ;</span>
+<span class="s">            sh:path security:assessedElement ],</span>
 <span class="s">        [ sh:datatype core:DateTime ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;publishedTime&quot; ;</span>
@@ -1090,11 +1094,7 @@ External property restriction on /Core/Relationship/to: minCount: 1</p>
 <span class="s">        [ sh:datatype core:DateTime ;</span>
 <span class="s">            sh:maxCount 1 ;</span>
 <span class="s">            sh:name &quot;modifiedTime&quot; ;</span>
-<span class="s">            sh:path security:modifiedTime ],</span>
-<span class="s">        [ sh:class core:Element ;</span>
-<span class="s">            sh:maxCount 1 ;</span>
-<span class="s">            sh:name &quot;assessedElement&quot; ;</span>
-<span class="s">            sh:path security:assessedElement ] .</span>
+<span class="s">            sh:path security:modifiedTime ] .</span>
 </pre></div>
 
             
@@ -1124,7 +1124,7 @@ External property restriction on /Core/Relationship/to: minCount: 1</p>
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Tue, 09 Jan 2024 23:08:25 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Thu, 11 Jan 2024 13:02:56 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>
@@ -1185,7 +1185,7 @@ $('#search-input-sidebar').keyup(function() {
 
     $(document).ready(function (){
       $('#sidebar-wrapper').animate({
-          scrollTop: $("#sd_325").offset().top - 100
+          scrollTop: $("#sd_315").offset().top - 100
       }, 100);
     });
 
