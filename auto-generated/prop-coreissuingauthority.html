@@ -943,7 +943,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
                         <li><a href="entities-tree-properties.html">rdf:Property</a>
 
                           <ul>
-                            <li><a style="font-weight: bold;" title="'issuingAuthority' - A issuingAuthority is TODO">core:issuingAuthority</a>
+                            <li><a style="font-weight: bold;" title="'issuingAuthority' - An issuingAuthority is an entity that is authorized to issue identification credentials. The entity may be a government, non-profit, educational..">core:issuingAuthority</a>
 
                             
                               </li>
@@ -997,7 +997,9 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
             </div>
             <div class="panel-body">
 
-                <p>A issuingAuthority is TODO</p>
+                <p>An issuingAuthority is an entity that is authorized to issue identification credentials.</p>
+
+<p>The entity may be a government, non-profit, educational institution, or commercial enterprise.  The URI provides a unique identifier for the issuing authority.</p>
             </div>
           </div>
            </div></div>
@@ -1072,10 +1074,12 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
 <span class="k">@prefix</span><span class="w"> </span><span class="nn">xsd:</span><span class="w"> </span><span class="nv">&lt;http://www.w3.org/2001/XMLSchema#&gt;</span><span class="w"> </span><span class="p">.</span>
 
 <span class="nn">core</span><span class="p">:</span><span class="nt">issuingAuthority</span> <span class="kt">a</span> <span class="nn">owl</span><span class="p">:</span><span class="nt">DatatypeProperty</span> <span class="p">;</span>
-    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">comment</span> <span class="s">&quot;A issuingAuthority is TODO&quot;</span> <span class="p">;</span>
-    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">domain</span> <span class="nn">core</span><span class="p">:</span><span class="nt">ExternalIdentifier</span> <span class="p">;</span>
-    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">range</span> <span class="nn">xsd</span><span class="p">:</span><span class="nt">anyURI</span> <span class="p">;</span>
-    <span class="nn">ns0</span><span class="p">:</span><span class="nt">term_status</span> <span class="s">&quot;Stable&quot;</span> <span class="p">.</span>
+    <span class="nn">rdfs</span><span class="p">:</span><span class="nt">comment</span> <span class="s">&quot;&quot;&quot;An issuingAuthority is an entity that is authorized to issue identification credentials.</span>
+
+<span class="s">The entity may be a government, non-profit, educational institution, or commercial enterprise.  The URI provides a unique identifier for the issuing authority.&quot;&quot;&quot; ;</span>
+<span class="s">    rdfs:domain core:ExternalIdentifier ;</span>
+<span class="s">    rdfs:range xsd:anyURI ;</span>
+<span class="s">    ns0:term_status &quot;Stable&quot; .</span>
 </pre></div>
 
 
@@ -1114,7 +1118,7 @@ span.linenos.special { color: #000000; background-color: #ffffc0; padding-left: 
   <footer class="footer">
     <div class="container">
     
-      <p class="text-muted">Documentation automatically generated on Thu, 11 Jan 2024 15:02:38 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
+      <p class="text-muted">Documentation automatically generated on Thu, 11 Jan 2024 20:44:17 with <a href="http://lambdamusic.github.io/Ontospy/">Ontospy</a> (v2.1.1)</p>
 
     
     </div>
