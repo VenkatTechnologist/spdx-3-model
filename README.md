@@ -29,6 +29,9 @@ People who wish to read the current version of the information
 should be viewing the generated files, while anyone wanting to edit
 should be working on the former.
 
+Here is a summary of content in the directories' at https://spdx.github.io/spdx-3-model/ :
+// TBD
+
 For information about how to contribute to a specific profile,
 please see [Contributing.md](Contributing.md).
 
