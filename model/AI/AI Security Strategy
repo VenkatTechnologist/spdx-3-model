@@ -1,2 +1,11 @@
-This file is a placeholder for the AI Security strategy under works.
-This effort is to take care of issue #772 created in the upstream.
+# AI Security Strategy
+
+## Classifications
+
+**AI Security Strategy** can be broadly classified into two, based on SPDX SBOM perspective.
+
+1. Another software party using the AI system for their work
+2. End-user customer using the AI system
+
+
+
