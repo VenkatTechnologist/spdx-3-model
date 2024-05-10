@@ -7,6 +7,8 @@ The **AI Security Strategy** can be broadly classified into two, based on SPDX S
 1. Another software party using the AI system for their work
 2. End-user customer using the AI system
 
+Things to consider include:
+
 ### Third-party software using the AI system
 
 1. Data Privacy
@@ -23,8 +25,6 @@ The **AI Security Strategy** can be broadly classified into two, based on SPDX S
 12. Model maintainability
 
 ### End-users using AI system
-
-Things to consider include:
 
 1. Data Privacy
 2. Data breaches
