@@ -2,10 +2,41 @@
 
 ## Classifications
 
-**AI Security Strategy** can be broadly classified into two, based on SPDX SBOM perspective.
+The **AI Security Strategy** can be broadly classified into two, based on SPDX SBOM perspective.
 
 1. Another software party using the AI system for their work
 2. End-user customer using the AI system
+
+### Third-party software using the AI system
+
+1. Data Privacy
+2. Model security
+3. Access Control
+4. API security
+5. Secure communications
+6. Threat detection & monitoring
+7. Governance, Regulation, and Compliance (GRC) & auditing
+8. Supply Chain security
+9. Data Ownership & sharing details
+10. Model explainability
+11. Model performance
+12. Model maintainability
+
+### End-users using AI system
+
+Things to consider include:
+
+1. Data Privacy
+2. Data breaches
+3. Aigorithm Bias & Fairness
+4. Reliability & Robustness
+5. Adversarial attacks
+6. Transparency
+7. Explainability
+8. Governance, Regulation, and Compliance (GRC)
+9. Secure integration & deployment
+10. Vulnerability Management
+11. Access Control
 
 
 
