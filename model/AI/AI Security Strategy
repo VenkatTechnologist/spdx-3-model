@@ -1,4 +1,4 @@
-# AI Security Strategy
+1. # AI Security Strategy
 
 ## Classifications
 
@@ -38,7 +38,8 @@ Things to consider include:
 10. Vulnerability Management
 11. Access Control
 
-Consider: https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-218A.ipd.pdf
+Consider: 1. https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-218A.ipd.pdf
+          2. https://docs.google.com/document/d/1P4J7LSaZYg6Sdg_uXy-bdf5FBgDxr7u5ytPe8YJl6-8/edit
 
 Need to discuss about what 'AI' means, and what considerations for generative AI (separately or included in 'AI').
 
