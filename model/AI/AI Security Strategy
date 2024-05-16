@@ -4,8 +4,8 @@
 
 The **AI Security Strategy** can be broadly classified into two, based on SPDX SBOM perspective.
 
-1. Another software party using the AI system for their work
-2. End-user customer using the AI system
+1. Another software party using the AI system for their work (including vulnerability management)
+2. End-user customer using the AI system (including vulnerability management)
 
 Things to consider include:
 
