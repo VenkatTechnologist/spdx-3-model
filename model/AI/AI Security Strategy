@@ -23,6 +23,8 @@ Things to consider include:
 10. Model explainability
 11. Model performance
 12. Model maintainability
+13. Vulnerabilities (go into one of the one of the previous sections: data poisoning, model poisoning, neural trojan attacks, model transfer attacks, malicious
+    model files and dependencies, dependency confusion, typo-squatting, hallucinations)
 
 ### End-users using AI system
 
@@ -37,6 +39,8 @@ Things to consider include:
 9. Secure integration & deployment
 10. Vulnerability Management
 11. Access Control
+12. Vulnerabilities (go into one of the one of the previous sections: data poisoning, model poisoning, neural trojan attacks, model transfer attacks, malicious
+    model files and dependencies, dependency confusion, typo-squatting, hallucinations)
 
 Consider: 1. https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-218A.ipd.pdf
           2. https://docs.google.com/document/d/1P4J7LSaZYg6Sdg_uXy-bdf5FBgDxr7u5ytPe8YJl6-8/edit
